@@ -2,45 +2,115 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Lekisa trading limited</title>
-    <meta content="Chemical Distributer, industrial chemical Distributer, industrial chemical seller" name="keywords">
-    <meta content="A chemical distribution company" name="description">
-    <meta name="author" content="Samuel Muli">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="dark-blue">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <title>Lekisa Trading Limited - Services</title>
+    <meta content="Chemical Distributer, industrial chemical Distributer, industrial chemical seller" name="keywords" />
+    <meta content="A chemical distribution company" name="description" />
+    <meta name="author" content="Samuel Muli" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="dark-blue" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <!-- Icon Font Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
     <!-- Libraries Stylesheet -->
     <link rel="stylesheet" href="lib/animate/animate.min.css" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <style>
+        /* Additional custom styles for services page */
+        .service-value-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #0d6efd;
+            height: 100%;
+        }
+        
+        .service-value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: #0d6efd;
+            margin-bottom: 1rem;
+        }
+        
+        .core-values-section {
+            background: linear-gradient(rgba(13, 110, 253, 0.05), rgba(13, 110, 253, 0.05)), url('img/pattern-bg.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .value-pill {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 50px;
+            padding: 8px 20px;
+            margin: 5px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .value-pill:hover {
+            background-color: #0d6efd;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .service-feature-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .service-feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #dee2e6;
+        }
+        
+        .service-feature-list li:before {
+            content: "✓";
+            color: #0d6efd;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .commitment-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: #0d6efd;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
-
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
@@ -66,7 +136,6 @@
                             <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
                             <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -79,7 +148,9 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="#" class="navbar-brand p-0">
-                    <h1 class="text-primary mb-0"><i class="fab fa-slack me-2"></i> LTL</h1>
+                    <h1 class="text-primary mb-0">
+                        <i class="fab fa-slack me-2"></i> LTL
+                    </h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -102,14 +173,13 @@
                         <a href="staff" class="nav-item nav-link">Staff</a>
                         <a href="gallery" class="nav-item nav-link">Gallery</a>
                         <a href="contact" class="nav-item nav-link">Contact</a>
-
                     </div>
                 </div>
                 <div class="d-none d-xl-flex flex-shrink-0 ps-4">
                     <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
                         data-wow-delay=".9s">
                         <i class="fa fa-phone-alt fa-2x"></i>
-                        <div class="position-absolute" style="top: 7px; right: 12px;">
+                        <div class="position-absolute" style="top: 7px; right: 12px">
                             <span><i class="fa fa-comment-dots text-secondary"></i></span>
                         </div>
                     </a>
@@ -125,158 +195,190 @@
 
     <!-- Header Start -->
     <div class="container-fluid bg-breadcrumb">
-        <div class="container text-center py-5" style="max-width: 900px;">
-            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Services</h4>
+        <div class="container text-center py-5" style="max-width: 900px">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">
+                Our Services
+            </h4>
             <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                <!-- <li class="breadcrumb-item"><a href="index">Home</a></li> -->
-                <!-- <li class="breadcrumb-item active text-primary">Service</li> -->
+                <li class="breadcrumb-item"><a href="index" class="text-white">Home</a></li>
+                <li class="breadcrumb-item active text-primary">Services</li>
             </ol>
         </div>
     </div>
     <!-- Header End -->
 
+    <!-- Mission & Values Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative h-100">
+                        <img src="img/service-mission.jpg" class="img-fluid rounded" alt="Lekisa Mission">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h4 class="text-primary mb-4">Our Commitment</h4>
+                    <h1 class="display-5 mb-4">Delivering Excellence Through Our Values</h1>
+                    <p class="mb-4">At Lekisa Trading Limited, our services are built upon a foundation of integrity, quality, and customer commitment. We strive to be your trusted partner in industrial chemical solutions.</p>
+                    
+                    <div class="d-flex flex-wrap mt-4">
+                        <span class="value-pill">Quality Assurance</span>
+                        <span class="value-pill">Customer Commitment</span>
+                        <span class="value-pill">Integrity & Transparency</span>
+                        <span class="value-pill">Accountability</span>
+                        <span class="value-pill">Innovation</span>
+                        <span class="value-pill">Environmental Responsibility</span>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <a href="about" class="btn btn-primary py-2 px-4 mt-3">Learn More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mission & Values End -->
 
     <!-- Service Start -->
     <div class="container-fluid service py-5">
         <div class="container py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                <h4 class="text-primary">Our Services</h4>
-                <h1 class="display-4 mb-4">We Provide Best Services</h1>
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+                <h4 class="text-primary">Our Specialized Services</h4>
+                <h1 class="display-4 mb-4">Comprehensive Engineering Solutions</h1>
+                <p class="mb-0">Leveraging our expertise to deliver top-tier industrial chemical services with a commitment to quality and sustainability.</p>
             </div>
+            
             <div class="row g-4 justify-content-center">
                 <div class="col-md-12 col-lg-12 col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="img/1.jpg" class="img-fluid rounded-top w-100" alt="">
-
+                    <div class="service-item rounded shadow-sm">
+                        <div class="service-img position-relative">
+                            <img src="img/1.jpg" class="img-fluid rounded-top w-100" alt="Chemical Engineering" />
+                            <div class="commitment-badge">Quality Assured</div>
                         </div>
                         <div class="service-content p-4">
                             <div class="service-content-inner">
-                                <a href="#" class="d-inline-block h4 mb-4">Chemical Engineering</a>
-                                <p class="mb-4">Lekisa Trading Limited's chemical engineering services offer
-                                    comprehensive solutions tailored to meet the diverse needs of various industries. We
-                                    excel in process design and optimization, helping clients develop and refine
-                                    chemical processes to enhance efficiency and reduce operational costs. Our expertise
-                                    extends to the design of chemical plants and facilities, ensuring adherence to
-                                    industry standards and regulatory compliance. Additionally, Lekisa Trading Limited
-                                    places a strong emphasis on environmental engineering, implementing sustainable
-                                    practices to minimize ecological impact and offering waste management and treatment
-                                    solutions to handle industrial by-products and effluents effectively.</p>
-                                <p>
-
-                                    Safety and risk management are paramount in Our service offerings, with thorough
-                                    safety assessments and hazard analyses conducted to guarantee the safe operation of
-                                    chemical plants. Lekisa Trading Limited also contributes to research and
-                                    development, fostering innovation in chemical processes and materials to keep pace
-                                    with industry advancements. Our consultancy services provide clients with expert
-                                    advice on project planning, feasibility studies, and technical evaluations. To
-                                    ensure high-quality output, the company implements rigorous quality control
-                                    measures, regularly monitoring and testing processes. Additionally, we offer
-                                    training programs to enhance the skills of personnel and provide ongoing technical
-                                    support, ensuring clients can maintain optimal operations and address any challenges
-                                    effectively.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-12 col-xl-6 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="img/2.jpeg" class="img-fluid rounded-top w-100" alt="">
-
-                        </div>
-                        <div class="service-content p-4">
-                            <div class="service-content-inner">
-                                <a href="#" class="d-inline-block h4 mb-4">Mechanical Engineering and Design</a>
-                                <p class="mb-4">Lekisa Trading Limited's mechanical engineering and design services
-                                    deliver robust solutions across a wide range of industries. Their expertise in
-                                    mechanical design encompasses the development of innovative and efficient machinery,
-                                    equipment, and systems tailored to client needs. This includes the creation of
-                                    detailed technical drawings, 3D models, and prototypes to ensure precision and
-                                    functionality in the final products. Their process engineering capabilities involve
-                                    optimizing manufacturing processes to enhance productivity, reduce costs, and
-                                    improve overall efficiency. Additionally, Lekisa Trading Limited emphasizes
-                                    sustainability, incorporating eco-friendly practices and materials in their designs
-                                    to minimize environmental impact.</p>
-                                <p class="mb-4">In the realm of safety and reliability, Lekisa Trading Limited conducts
-                                    comprehensive assessments to ensure that all mechanical systems operate safely and
-                                    efficiently. Their research and development efforts focus on advancing mechanical
-                                    technologies and creating new solutions to meet the evolving demands of various
-                                    industries. The company provides consultancy services, offering expert guidance on
-                                    mechanical engineering projects, from initial concept through to implementation.
-                                    Quality assurance is a cornerstone of their approach, with stringent testing and
-                                    validation processes in place to guarantee the highest standards. Furthermore,
-                                    Lekisa Trading Limited offers training programs to our staff and clients on how to
-                                    use and maintain our products</p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-12 col-xl-6 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="img/3.jpeg" class="img-fluid rounded-top w-100" alt="">
-
-                        </div>
-                        <div class="service-content p-4">
-                            <div class="service-content-inner">
-                                <a href="#" class="d-inline-block h4 mb-4">Process Engineering and Design</a>
-                                <p class="mb-4">Lekisa Trading Limited's process engineering and design services deliver
-                                    tailored solutions to optimize industrial processes and enhance operational
-                                    efficiency across various sectors. Their expertise in process design includes the
-                                    development and refinement of chemical processes to maximize productivity and
-                                    minimize costs. By designing state-of-the-art facilities and systems, Lekisa ensures
-                                    that all projects adhere to stringent industry standards and regulatory
-                                    requirements, providing clients with robust and reliable operations. Their process
-                                    optimization services focus on improving existing systems through innovative
-                                    techniques and advanced technologies, enabling clients to achieve higher performance
-                                    and greater sustainability.</p>
-                                <p>
-                                    Safety, environmental compliance, and quality control are integral components of
-                                    Lekisa's process engineering and design services. The company conducts comprehensive
-                                    safety assessments and hazard analyses to ensure the safe and efficient operation of
-                                    all processes. They also prioritize environmental engineering by implementing
-                                    eco-friendly practices and offering solutions for waste management and emissions
-                                    control. Lekisa's commitment to quality is evident in their rigorous testing and
-                                    monitoring protocols, ensuring that all processes meet the highest standards.
-                                    Additionally, they provide consultancy services to guide clients through project
-                                    planning, feasibility studies, and technical evaluations, and offer training
-                                    programs to enhance the skills of personnel, ensuring ongoing support and successful
-                                    project outcomes.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-12 col-xl-6 wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="img/4.jpg" class="img-fluid rounded-top w-100" alt="">
-
-                        </div>
-                        <div class="service-content p-4">
-                            <div class="service-content-inner">
-                                <a href="#" class="d-inline-block h4 mb-4">Project Management</a>
-                                <p class="mb-4">Lekisa Trading Limited's project management services are designed to
-                                    guide clients through every phase of their projects, ensuring successful and timely
-                                    completion. Their comprehensive approach encompasses project planning, execution,
-                                    monitoring, and closing, with a strong emphasis on meeting client goals and adhering
-                                    to budgets and timelines. By leveraging industry best practices and advanced project
-                                    management methodologies, Lekisa provides detailed project plans that outline scope,
-                                    objectives, deliverables, and schedules. Their meticulous planning ensures that all
-                                    aspects of a project are accounted for, minimizing risks and uncertainties.
+                                <h4 class="mb-3"><i class="fas fa-flask me-2 text-primary"></i>Chemical Engineering</h4>
+                                <p class="mb-4">
+                                    Our chemical engineering services deliver comprehensive solutions tailored to diverse industrial needs, with a strong emphasis on environmental responsibility and sustainable practices.
                                 </p>
-                                <p>
-                                    Throughout the project lifecycle, Lekisa's experienced project managers maintain
-                                    close oversight, coordinating resources and managing stakeholder communications to
-                                    keep the project on track. They employ rigorous monitoring and control processes to
-                                    track progress, identify potential issues, and implement corrective actions as
-                                    needed. This proactive approach ensures that projects remain aligned with their
-                                    objectives and that any deviations are promptly addressed. Additionally, Lekisa
-                                    emphasizes quality assurance, ensuring that all deliverables meet the highest
-                                    standards. Their commitment to excellence and client satisfaction is evident in
-                                    their consistent delivery of successful projects that fulfill client expectations
-                                    and drive business value.</p>
+                                
+                                <ul class="service-feature-list">
+                                    <li>Process design and optimization for enhanced efficiency</li>
+                                    <li>Chemical plant design adhering to industry standards</li>
+                                    <li>Environmental engineering with sustainable practices</li>
+                                    <li>Waste management and treatment solutions</li>
+                                    <li>Safety assessments and hazard analyses</li>
+                                    <li>Research and development for innovation</li>
+                                    <li>Expert consultancy and technical evaluations</li>
+                                    <li>Rigorous quality control measures</li>
+                                    <li>Training programs and ongoing technical support</li>
+                                </ul>
+                                
+                                <div class="mt-4">
+                                    <a href="contact" class="btn btn-outline-primary py-2 px-4">Inquire About This Service</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-12 col-lg-12 col-xl-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item rounded shadow-sm">
+                        <div class="service-img position-relative">
+                            <img src="img/2.jpeg" class="img-fluid rounded-top w-100" alt="Mechanical Engineering" />
+                            <div class="commitment-badge">Innovation Focused</div>
+                        </div>
+                        <div class="service-content p-4">
+                            <div class="service-content-inner">
+                                <h4 class="mb-3"><i class="fas fa-cogs me-2 text-primary"></i>Mechanical Engineering and Design</h4>
+                                <p class="mb-4">
+                                    We deliver robust mechanical engineering solutions with innovative designs that prioritize efficiency, reliability, and environmental sustainability.
+                                </p>
+                                
+                                <ul class="service-feature-list">
+                                    <li>Innovative machinery and equipment design</li>
+                                    <li>Detailed technical drawings and 3D modeling</li>
+                                    <li>Prototype development and testing</li>
+                                    <li>Manufacturing process optimization</li>
+                                    <li>Eco-friendly design practices</li>
+                                    <li>Comprehensive safety and reliability assessments</li>
+                                    <li>Advanced mechanical technology development</li>
+                                    <li>Expert consultancy from concept to implementation</li>
+                                    <li>Stringent testing and validation processes</li>
+                                    <li>Training programs for equipment operation and maintenance</li>
+                                </ul>
+                                
+                                <div class="mt-4">
+                                    <a href="contact" class="btn btn-outline-primary py-2 px-4">Inquire About This Service</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-12 col-lg-12 col-xl-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item rounded shadow-sm">
+                        <div class="service-img position-relative">
+                            <img src="img/3.jpeg" class="img-fluid rounded-top w-100" alt="Process Engineering" />
+                            <div class="commitment-badge">Efficiency Driven</div>
+                        </div>
+                        <div class="service-content p-4">
+                            <div class="service-content-inner">
+                                <h4 class="mb-3"><i class="fas fa-project-diagram me-2 text-primary"></i>Process Engineering and Design</h4>
+                                <p class="mb-4">
+                                    Our process engineering services optimize industrial operations through innovative techniques and advanced technologies, ensuring higher performance and sustainability.
+                                </p>
+                                
+                                <ul class="service-feature-list">
+                                    <li>Industrial process development and refinement</li>
+                                    <li>State-of-the-art facility design</li>
+                                    <li>Process optimization for maximum productivity</li>
+                                    <li>Advanced technology integration</li>
+                                    <li>Comprehensive safety assessments</li>
+                                    <li>Environmental compliance and emissions control</li>
+                                    <li>Waste management solutions</li>
+                                    <li>Rigorous quality testing and monitoring</li>
+                                    <li>Project planning and feasibility studies</li>
+                                    <li>Personnel training and skill enhancement</li>
+                                </ul>
+                                
+                                <div class="mt-4">
+                                    <a href="contact" class="btn btn-outline-primary py-2 px-4">Inquire About This Service</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-12 col-lg-12 col-xl-6 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="service-item rounded shadow-sm">
+                        <div class="service-img position-relative">
+                            <img src="img/4.jpg" class="img-fluid rounded-top w-100" alt="Project Management" />
+                            <div class="commitment-badge">Results Guaranteed</div>
+                        </div>
+                        <div class="service-content p-4">
+                            <div class="service-content-inner">
+                                <h4 class="mb-3"><i class="fas fa-tasks me-2 text-primary"></i>Project Management</h4>
+                                <p class="mb-4">
+                                    We guide clients through every project phase with meticulous planning and execution, ensuring successful outcomes that align with objectives and timelines.
+                                </p>
+                                
+                                <ul class="service-feature-list">
+                                    <li>Comprehensive project planning and scoping</li>
+                                    <li>Detailed objective and deliverable definition</li>
+                                    <li>Budget and timeline management</li>
+                                    <li>Resource coordination and allocation</li>
+                                    <li>Stakeholder communication management</li>
+                                    <li>Progress monitoring and issue identification</li>
+                                    <li>Corrective action implementation</li>
+                                    <li>Quality assurance protocols</li>
+                                    <li>Risk assessment and mitigation</li>
+                                    <li>Project closure and evaluation</li>
+                                </ul>
+                                
+                                <div class="mt-4">
+                                    <a href="contact" class="btn btn-outline-primary py-2 px-4">Inquire About This Service</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -285,6 +387,95 @@
         </div>
     </div>
     <!-- Service End -->
+
+   <!--   Why Choose Us Start 
+    <div class="container-fluid core-values-section py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px">
+                <h4 class="text-primary">Why Choose Lekisa</h4>
+                <h1 class="display-4 mb-4">Excellence in Chemical Solutions</h1>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="card service-value-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Quality Assurance</h5>
+                            <p class="card-text">We guarantee reliable provision of high quality chemicals that align with industry benchmarks and customer requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="card service-value-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Customer Commitment</h5>
+                            <p class="card-text">We put customer needs first by offering responsive services, dependable supply and customized solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="card service-value-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Integrity & Transparency</h5>
+                            <p class="card-text">We deploy unmatched commitment to ethical standards in all our dealings, ensuring trust and accountability.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="card service-value-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Innovation</h5>
+                            <p class="card-text">We go beyond obvious solutions and business trends, continuously improving our services and products.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="card service-value-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Environmental Responsibility</h5>
+                            <p class="card-text">We promote sustainable practices and comply with regulatory standards to reduce environmental footprint.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="card service-value-card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-check-double"></i>
+                            </div>
+                            <h5 class="card-title mb-3">Accountability</h5>
+                            <p class="card-text">We steadfastly uphold our commitments and are responsible for what we do, ensuring client satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.8s">
+                <a href="contact" class="btn btn-primary py-3 px-5">Get In Touch With Our Experts</a>
+            </div>
+        </div>
+    </div>
+    Why Choose Us End  -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
@@ -296,12 +487,15 @@
                             <div class="col-md-6 col-lg-6 col-xl-5">
                                 <div class="footer-item">
                                     <a href="index" class="p-0">
-                                        <h3 class="text-white"><i class="fab fa-slack me-3"></i>Lekisa Trading Limited
+                                        <h3 class="text-white">
+                                            <i class="fab fa-slack me-3"></i>Lekisa Trading Limited
                                         </h3>
                                         <!-- <img src="img/logo.png" alt="Logo"> -->
                                     </a>
-                                    <p class="text-white mb-4">Your trusted partner in delivering top -tier industrial
-                                        chemicals </p>
+                                    <p class="text-white mb-4">
+                                        Your trusted partner in delivering top -tier industrial
+                                        chemicals
+                                    </p>
                                     <div class="footer-btn d-flex">
                                         <a class="btn btn-md-square rounded-circle me-3" href="#"><i
                                                 class="fab fa-facebook-f"></i></a>
@@ -329,7 +523,7 @@
                                     <div class="row g-3">
                                         <div class="col-4">
                                             <div class="footer-instagram rounded">
-                                                <img src="img/f1.jpg" class="img-fluid w-100" alt="">
+                                                <img src="img/f1.jpg" class="img-fluid w-100" alt="" />
                                                 <div class="footer-search-icon">
                                                     <!-- <a href="img/f1.jpg" data-lightbox="footerInstagram-1" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
                                                 </div>
@@ -337,7 +531,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="footer-instagram rounded">
-                                                <img src="img/f2.jpg" class="img-fluid w-100" alt="">
+                                                <img src="img/f2.jpg" class="img-fluid w-100" alt="" />
                                                 <div class="footer-search-icon">
                                                     <!-- <a href="img/f2.jpg" data-lightbox="footerInstagram-2" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
                                                 </div>
@@ -345,7 +539,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="footer-instagram rounded">
-                                                <img src="img/f3.jpg" class="img-fluid w-100" alt="">
+                                                <img src="img/f3.jpg" class="img-fluid w-100" alt="" />
                                                 <div class="footer-search-icon">
                                                     <!-- <a href="img/f3.jpg" data-lightbox="footerInstagram-3" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
                                                 </div>
@@ -353,7 +547,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="footer-instagram rounded">
-                                                <img src="img/f4.jpg" class="img-fluid w-100" alt="">
+                                                <img src="img/f4.jpg" class="img-fluid w-100" alt="" />
                                                 <div class="footer-search-icon">
                                                     <!-- <a href="img/f4.jpg" data-lightbox="footerInstagram-4" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
                                                 </div>
@@ -361,7 +555,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="footer-instagram rounded">
-                                                <img src="img/f5.jpg" class="img-fluid w-100" alt="">
+                                                <img src="img/f5.jpg" class="img-fluid w-100" alt="" />
                                                 <div class="footer-search-icon">
                                                     <!-- <a href="img/f5.jpg" data-lightbox="footerInstagram-5" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
                                                 </div>
@@ -369,7 +563,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="footer-instagram rounded">
-                                                <img src="img/f6.jpg" class="img-fluid w-100" alt="">
+                                                <img src="img/f6.jpg" class="img-fluid w-100" alt="" />
                                                 <div class="footer-search-icon">
                                                     <!-- <a href="img/f6.jpg" data-lightbox="footerInstagram-6" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
                                                 </div>
@@ -380,7 +574,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                    <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08)">
                         <div class="row g-0">
                             <div class="col-12">
                                 <div class="row g-4">
@@ -391,7 +585,7 @@
                                             </div>
                                             <div>
                                                 <h4 class="text-white">Address</h4>
-                                                <p class="mb-0"> Donholm, Nairobi – KENYA</p>
+                                                <p class="mb-0">Donholm, Nairobi – KENYA</p>
                                             </div>
                                         </div>
                                     </div>
@@ -416,7 +610,7 @@
                                             </div>
                                             <div>
                                                 <h4 class="text-white">Telephone</h4>
-                                                <p class="mb-0">+254 713506664<br>+254 741077018</p>
+                                                <p class="mb-0">+254 713506664<br />+254 741077018</p>
                                             </div>
                                         </div>
                                     </div>
@@ -432,16 +626,18 @@
                         <p class="text-white mb-3">Subscribe to Our Newsletter</p>
                         <div class="position-relative rounded-pill mb-4">
                             <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
-                                placeholder="Enter your email">
+                                placeholder="Enter your email" />
                             <button type="button"
-                                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">
+                                SignUp
+                            </button>
                         </div>
                         <div class="d-flex flex-shrink-0">
                             <div class="footer-btn">
                                 <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada"
                                     data-wow-delay=".9s">
                                     <i class="fa fa-phone-alt fa-2x"></i>
-                                    <div class="position-absolute" style="top: 2px; right: 12px;">
+                                    <div class="position-absolute" style="top: 2px; right: 12px">
                                         <span><i class="fa fa-comment-dots text-secondary"></i></span>
                                     </div>
                                 </a>
@@ -464,23 +660,21 @@
             <div class="row g-4 align-items-center">
                 <div class="col-md-6 text-center text-md-end mb-md-0">
                     <span class="text-body"><a href="#" class="border-bottom text-white"><i
-                                class="fas fa-copyright text-light me-2"></i>Lekisa Trading Ltd</a>, All right
-                        reserved.</span>
+                                class="fas fa-copyright text-light me-2"></i>Lekisa Trading
+                            Ltd</a>, All right reserved.</span>
                 </div>
                 <div class="col-md-6 text-center text-md-start text-body">
-
-                    Designed By <a class="border-bottom text-white" href="https://muli-samuel.onrender.com"
-                        target="_blank">Samuel Muli</a>
+                    Designed By
+                    <a class="border-bottom text-white" href="https://muli-samuel.onrender.com" target="_blank">Samuel
+                        Muli</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Copyright End -->
 
-
     <!-- Back to Top -->
     <a href="" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -492,9 +686,49 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    <script>
+        // Additional JavaScript for enhanced interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate value pills on scroll
+            const valuePills = document.querySelectorAll('.value-pill');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'scale(1)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            valuePills.forEach(pill => {
+                pill.style.opacity = 0;
+                pill.style.transform = 'scale(0.8)';
+                pill.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(pill);
+            });
+            
+            // Add smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

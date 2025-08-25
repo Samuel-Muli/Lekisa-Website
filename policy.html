@@ -2,45 +2,137 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>LifeSure - Life Insurance Website Template</title>
-    <meta content="Chemical Distributer, industrial chemical Distributer, industrial chemical seller" name="keywords">
-    <meta content="A chemical distribution company" name="description">
-    <meta name="author" content="Samuel Muli">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="dark-blue">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <title>Policy & Compliance - Lekisa Trading Limited</title>
+    <meta content="Chemical Distributer, industrial chemical Distributer, industrial chemical seller" name="keywords" />
+    <meta
+        content="Lekisa Trading Limited's policy and compliance statement for quality, safety, and environmental responsibility"
+        name="description" />
+    <meta name="author" content="Samuel Muli" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#0d6efd" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <!-- Icon Font Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
     <!-- Libraries Stylesheet -->
     <link rel="stylesheet" href="lib/animate/animate.min.css" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+        /* Custom Styles for Policy Page */
+        .policy-header {
+            background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.9)), url('img/policy-banner.jpg') center/cover no-repeat;
+            padding: 6rem 0;
+            color: white;
+        }
+
+        .policy-statement {
+            background-color: #f8f9fa;
+            border-left: 5px solid #0d6efd;
+            padding: 2.5rem;
+            margin: 3rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .policy-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .policy-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .policy-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 1.5rem;
+            background-color: rgba(13, 110, 253, 0.1);
+            color: #0d6efd;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .commitment-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/commitment-bg.jpg') center/cover fixed no-repeat;
+            color: white;
+            padding: 5rem 0;
+        }
+
+        .commitment-item {
+            text-align: center;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .commitment-item:hover {
+            transform: translateY(-5px);
+            background-color: rgba(13, 110, 253, 0.3);
+        }
+
+        .commitment-icon {
+            font-size: 2.5rem;
+            color: #0d6efd;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .policy-header {
+                padding: 4rem 0;
+            }
+
+            .policy-statement {
+                padding: 1.5rem;
+            }
+
+            .policy-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .policy-icon {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
@@ -52,13 +144,9 @@
             <div class="row gx-0 align-items-center">
                 <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                     <div class="d-flex flex-wrap">
-                        <div class="border-end border-primary pe-3">
-                            <a href="#" class="text-muted small"><i
-                                    class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
-                        </div>
                         <div class="ps-3">
-                            <a href="mailto:example@gmail.com" class="text-muted small"><i
-                                    class="fas fa-envelope text-primary me-2"></i>example@gmail.com</a>
+                            <a href="mailto:lekisatradingltd@gmail.com" class="text-muted small"><i
+                                    class="fas fa-envelope text-primary me-2"></i>lekisatradingltd@gmail.com</a>
                         </div>
                     </div>
                 </div>
@@ -70,7 +158,6 @@
                             <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
                             <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -82,9 +169,10 @@
     <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a href="#" class="navbar-brand p-0">
-                    <h1 class="text-primary mb-0"><i class="fab fa-slack me-2"></i> LifeSure</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                <a href="index" class="navbar-brand p-0">
+                    <h1 class="text-primary mb-0">
+                        <i class="fab fa-slack me-2"></i> LTL
+                    </h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -93,13 +181,12 @@
                     <div class="navbar-nav mx-0 mx-lg-auto">
                         <a href="index" class="nav-item nav-link">Home</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                            <a href="#" class="nav-link active" data-bs-toggle="dropdown">
                                 <span class="dropdown-toggle">About</span>
                             </a>
                             <div class="dropdown-menu">
                                 <a href="about" class="dropdown-item">About Us</a>
-
-                                <a href="policy" class="dropdown-item">Our Policy</a>
+                                <a href="policy" class="dropdown-item active">Our Policy</a>
                             </div>
                         </div>
                         <a href="service" class="nav-item nav-link">Services</a>
@@ -109,16 +196,17 @@
                     </div>
                 </div>
                 <div class="d-none d-xl-flex flex-shrink-0 ps-4">
-                    <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
+                    <a href="tel:+254713506664"
+                        class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
                         data-wow-delay=".9s">
                         <i class="fa fa-phone-alt fa-2x"></i>
-                        <div class="position-absolute" style="top: 7px; right: 12px;">
+                        <div class="position-absolute" style="top: 7px; right: 12px">
                             <span><i class="fa fa-comment-dots text-secondary"></i></span>
                         </div>
                     </a>
                     <div class="d-flex flex-column ms-3">
                         <span>Call to Our Experts</span>
-                        <a href="tel:+254 713506664"><span class="text-dark">Free: +254 713506664</span></a>
+                        <a href="tel:+254713506664"><span class="text-dark">+254 713506664</span></a>
                     </div>
                 </div>
             </nav>
@@ -126,70 +214,211 @@
     </div>
     <!-- Navbar & Hero End -->
 
-    <!-- Header Start -->
-    <div class="container-fluid bg-breadcrumb">
-        <div class="container text-center py-5" style="max-width: 900px;">
-            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Features</h4>
-            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                <!-- <li class="breadcrumb-item"><a href="index">Home</a></li> -->
-                <!-- <li class="breadcrumb-item"><a href="#">About</a></li> -->
-                <!-- <li class="breadcrumb-item active text-primary">Policy</li> -->
-            </ol>
+    <!-- Page Header Start -->
+    <div class="container-fluid policy-header">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white mb-4 wow fadeInDown">Policy & Compliance</h1>
+            <nav aria-label="breadcrumb" class="wow fadeInDown" data-wow-delay="0.3s">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="about" class="text-white">About</a></li>
+                    <li class="breadcrumb-item active text-primary">Policy</li>
+                </ol>
+            </nav>
         </div>
     </div>
-    <!-- Header End -->
+    <!-- Page Header End -->
 
-
-    <!-- Feature Start -->
-    <div class="container-fluid feature bg-light py-5">
+    <!-- Policy Statement Start -->
+    <div class="container-fluid py-5">
         <div class="container py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                <h4 class="text-primary">POLICY AND COMPLIANCE STATEMENT.</h4>
-                <h6 class="display-4 mb-4">Statement from MR Stephen Kioko Mwania ,the Director & CEO.</h6>
-                <p class="mb-0">We aim at consistently enhancing the quality of our products while ensuring the safety
-                    of both individuals and the environment.
-                    We commit and are dedicated to;
-
-                </p>
+            <div class="policy-statement wow fadeInUp">
+                <h4 class="text-primary">Policy & Compliance Statement</h4>
+                <h3 class="mb-4">From Stephen Kioko Mwania, Director & CEO</h3>
+                <blockquote class="blockquote mb-0">
+                    <p class="mb-0">"We aim at consistently enhancing the quality of our products while ensuring the
+                        safety of both individuals and the environment. We commit and are dedicated to safeguarding and
+                        continuously enhancing the quality, environment, health and occupational safety of our personnel
+                        at all times."</p>
+                </blockquote>
             </div>
-            <div class="row g-4">
-                <div class="col-md-12 col-lg-12 col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="feature-item p-4 pt-0">
-                        <p class="mb-4">
-                            •Safeguard and continuously enhance the quality,environment, health and occupational safety
-                            of our personnel at all times. <br> <br>
-                            • Eliminate quality non-conformances <br> <br>
-                            • Establish a framework for defining quality and performance goals,and regularly evaluate
-                            and enhance processes ,services and product quality using an efficient management system.
-                            <br> <br>
-                            • Surpass customer requirement and ensure top-notch satisfaction to all customers.
 
-                        </p>
+            <div class="row g-4">
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <h2 class="display-5 mb-4">Our Commitments</h2>
+                    <p class="lead">At Lekisa Trading Limited, we are dedicated to upholding the highest standards in
+                        all our operations. Our policy commitments include:</p>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="d-flex policy-item">
+                        <div class="policy-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <h5>Safeguard Quality & Safety</h5>
+                            <p class="mb-0">Continuously enhance the quality, environment, health and occupational
+                                safety of our personnel at all times.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-12 col-xl-6 wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="feature-item p-4 pt-0">
 
-                        <p class="mb-4">
-                            • Adhering to all relevant environmental and safety laws,values and regulations as we
-                            believe it is essential for conducting business responsibly. <br> <br>
-                            • Reducing our environmental footprint by preventing pollution and minimizing waste. <br>
-                            <br>
-                            • Ensure the employees actively participate in and are consulted on matters concerning
-                            occupational health and safety . <br><br>
-                            • Maintaining a transparent communication with stakeholders to ensure they understand our
-                            policies ,standards programs and performance.
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="d-flex policy-item">
+                        <div class="policy-icon">
+                            <i class="fas fa-ban"></i>
+                        </div>
+                        <div>
+                            <h5>Eliminate Non-Conformances</h5>
+                            <p class="mb-0">Identify and eliminate quality non-conformances through rigorous quality
+                                control processes.</p>
+                        </div>
+                    </div>
+                </div>
 
-                        </p>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="d-flex policy-item">
+                        <div class="policy-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <h5>Performance Framework</h5>
+                            <p class="mb-0">Establish a framework for defining quality and performance goals, and
+                                regularly evaluate and enhance processes, services and product quality.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="d-flex policy-item">
+                        <div class="policy-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <div>
+                            <h5>Customer Satisfaction</h5>
+                            <p class="mb-0">Surpass customer requirements and ensure top-notch satisfaction to all
+                                customers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="d-flex policy-item">
+                        <div class="policy-icon">
+                            <i class="fas fa-scale-balanced"></i>
+                        </div>
+                        <div>
+                            <h5>Regulatory Compliance</h5>
+                            <p class="mb-0">Adhere to all relevant environmental and safety laws, values and regulations
+                                as we believe it is essential for conducting business responsibly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="d-flex policy-item">
+                        <div class="policy-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <div>
+                            <h5>Environmental Responsibility</h5>
+                            <p class="mb-0">Reduce our environmental footprint by preventing pollution and minimizing
+                                waste.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="d-flex policy-item">
+                        <div class="policy-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div>
+                            <h5>Employee Participation</h5>
+                            <p class="mb-0">Ensure employees actively participate in and are consulted on matters
+                                concerning occupational health and safety.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="d-flex policy-item">
+                        <div class="policy-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div>
+                            <h5>Transparent Communication</h5>
+                            <p class="mb-0">Maintain transparent communication with stakeholders to ensure they
+                                understand our policies, standards programs and performance.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <p class="mb-0">This policy will undergo regular reviews to ensure its continued alignment with regulations,
-            standards and applicable laws and regulations in all our operational locations.</p>
     </div>
-    <!-- Feature End -->
+    <!-- Policy Statement End -->
 
+    <!-- Commitment Section Start -->
+    <div class="container-fluid commitment-section">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+                <h2 class="display-5 mb-4">Our Ongoing Commitment</h2>
+                <p class="lead">This policy will undergo regular reviews to ensure its continued alignment with
+                    regulations, standards and applicable laws and regulations in all our operational locations.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="commitment-item">
+                        <div class="commitment-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h4>Regular Reviews</h4>
+                        <p>We continuously evaluate our policies to ensure compliance with changing regulations.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="commitment-item">
+                        <div class="commitment-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h4>Performance Monitoring</h4>
+                        <p>We track our performance against established benchmarks and goals.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="commitment-item">
+                        <div class="commitment-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Continuous Improvement</h4>
+                        <p>We invest in training and development to enhance our practices continually.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Commitment Section End -->
+
+    <!-- Contact CTA Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center wow fadeInUp">
+                    <h2 class="display-5 mb-4">Have Questions About Our Policies?</h2>
+                    <p class="lead mb-5">Contact us to learn more about our commitment to quality, safety, and
+                        environmental responsibility.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
+                        <a href="contact" class="btn btn-primary rounded-pill py-3 px-5">Contact Us</a>
+                        <a href="about" class="btn btn-outline-primary rounded-pill py-3 px-5">Learn More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact CTA End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
@@ -201,12 +430,13 @@
                             <div class="col-md-6 col-lg-6 col-xl-5">
                                 <div class="footer-item">
                                     <a href="index" class="p-0">
-                                        <h3 class="text-white"><i class="fab fa-slack me-3"></i>Lekisa Trading Limited
+                                        <h3 class="text-white">
+                                            <i class="fab fa-slack me-3"></i>Lekisa Trading Limited
                                         </h3>
-                                        <!-- <img src="img/logo.png" alt="Logo"> -->
                                     </a>
-                                    <p class="text-white mb-4">Your trusted partner in delivering top -tier industrial
-                                        chemicals </p>
+                                    <p class="text-white mb-4">
+                                        Your trusted partner in delivering top-tier industrial chemicals
+                                    </p>
                                     <div class="footer-btn d-flex">
                                         <a class="btn btn-md-square rounded-circle me-3" href="#"><i
                                                 class="fab fa-facebook-f"></i></a>
@@ -222,70 +452,28 @@
                             <div class="col-md-6 col-lg-6 col-xl-3">
                                 <div class="footer-item">
                                     <h4 class="text-white mb-4">Useful Links</h4>
+                                    <a href="index"><i class="fas fa-angle-right me-2"></i> Home</a>
                                     <a href="about"><i class="fas fa-angle-right me-2"></i> About Us</a>
                                     <a href="service"><i class="fas fa-angle-right me-2"></i> Services</a>
-                                    <a href="staff"><i class="fas fa-angle-right me-2"></i> Saff</a>
+                                    <a href="staff"><i class="fas fa-angle-right me-2"></i> Staff</a>
                                     <a href="contact"><i class="fas fa-angle-right me-2"></i> Contact</a>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-6 col-xl-4">
                                 <div class="footer-item">
-                                    <h4 class="mb-4 text-white">Instagram</h4>
-                                    <div class="row g-3">
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f1.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f1.jpg" data-lightbox="footerInstagram-1" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f2.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f2.jpg" data-lightbox="footerInstagram-2" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f3.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f3.jpg" data-lightbox="footerInstagram-3" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f4.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f4.jpg" data-lightbox="footerInstagram-4" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f5.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f5.jpg" data-lightbox="footerInstagram-5" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f6.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f6.jpg" data-lightbox="footerInstagram-6" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <h4 class="mb-4 text-white">Location</h4>
+                                    <div class="embed-responsive embed-responsive-16by9 rounded mb-3">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.817165835035!2d36.87021407409944!3d-1.280835435637936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11394110085f%3A0x7d5b2f7e5b3b3b3b!2sDonholm%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1642345678901!5m2!1sen!2ske"
+                                            width="100%" height="150" style="border:0; border-radius: 8px;"
+                                            allowfullscreen="" loading="lazy"></iframe>
                                     </div>
+                                    <p class="text-white">Godown No.4, Off Outering Road, Donholm, Nairobi – KENYA</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                    <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08)">
                         <div class="row g-0">
                             <div class="col-12">
                                 <div class="row g-4">
@@ -296,7 +484,7 @@
                                             </div>
                                             <div>
                                                 <h4 class="text-white">Address</h4>
-                                                <p class="mb-0"> Donholm, Nairobi – KENYA</p>
+                                                <p class="mb-0">Donholm, Nairobi – KENYA</p>
                                             </div>
                                         </div>
                                     </div>
@@ -321,7 +509,7 @@
                                             </div>
                                             <div>
                                                 <h4 class="text-white">Telephone</h4>
-                                                <p class="mb-0">+254 713506664<br>+254 741077018</p>
+                                                <p class="mb-0">+254 713506664<br />+254 741077018</p>
                                             </div>
                                         </div>
                                     </div>
@@ -337,23 +525,26 @@
                         <p class="text-white mb-3">Subscribe to Our Newsletter</p>
                         <div class="position-relative rounded-pill mb-4">
                             <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
-                                placeholder="Enter your email">
+                                placeholder="Enter your email" />
                             <button type="button"
-                                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">
+                                SignUp
+                            </button>
                         </div>
                         <div class="d-flex flex-shrink-0">
                             <div class="footer-btn">
-                                <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada"
+                                <a href="tel:+254713506664"
+                                    class="btn btn-lg-square rounded-circle position-relative wow tada"
                                     data-wow-delay=".9s">
                                     <i class="fa fa-phone-alt fa-2x"></i>
-                                    <div class="position-absolute" style="top: 2px; right: 12px;">
+                                    <div class="position-absolute" style="top: 2px; right: 12px">
                                         <span><i class="fa fa-comment-dots text-secondary"></i></span>
                                     </div>
                                 </a>
                             </div>
                             <div class="d-flex flex-column ms-3 flex-shrink-0">
                                 <span>Call to Our Experts</span>
-                                <a href="tel:+254 713506664"><span class="text-white">+254 713506664</span></a>
+                                <a href="tel:+254713506664"><span class="text-white">+254 713506664</span></a>
                             </div>
                         </div>
                     </div>
@@ -368,24 +559,22 @@
         <div class="container">
             <div class="row g-4 align-items-center">
                 <div class="col-md-6 text-center text-md-end mb-md-0">
-                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
-                                class="fas fa-copyright text-light me-2"></i>Lekisa Trading Ltd</a>, All right
+                    <span class="text-body"><a href="index" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>2025 Lekisa Trading Limited</a>, All right
                         reserved.</span>
                 </div>
                 <div class="col-md-6 text-center text-md-start text-body">
-
-                    Designed By <a class="border-bottom text-white" href="https://muli-samuel.onrender.com"
-                        target="_blank">Samuel Muli</a>
+                    Designed By
+                    <a class="border-bottom text-white" href="https://muli-samuel.onrender.com" target="_blank">Samuel
+                        Muli</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Copyright End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -396,7 +585,6 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

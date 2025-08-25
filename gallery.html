@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Lekisa trading limited</title>
+    <title>Gallery - Lekisa Trading Limited</title>
     <meta content="Chemical Distributer, industrial chemical Distributer, industrial chemical seller" name="keywords">
     <meta content="A chemical distribution company" name="description">
     <meta name="author" content="Samuel Muli">
@@ -27,12 +27,127 @@
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Custom Gallery Styles */
+        .gallery-section {
+            padding: 5rem 0;
+            background: #f8f9fa;
+        }
+
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .gallery-header h2 {
+            font-size: 2.5rem;
+            color: #0d6efd;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .gallery-header p {
+            color: #6c757d;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .gallery-filter {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .gallery-filter .btn {
+            margin: 0.25rem;
+            border-radius: 20px;
+            padding: 0.5rem 1.5rem;
+        }
+
+        .gallery-item {
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-img-container {
+            position: relative;
+            overflow: hidden;
+            height: 250px;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(13, 110, 253, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-icon {
+            color: #fff;
+            font-size: 2rem;
+        }
+
+        .gallery-caption {
+            padding: 1rem;
+            background: #fff;
+        }
+
+        .gallery-caption h5 {
+            margin-bottom: 0.5rem;
+            color: #212529;
+        }
+
+        .gallery-caption p {
+            color: #6c757d;
+            margin-bottom: 0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-img-container {
+                height: 200px;
+            }
+
+            .gallery-header h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -56,7 +171,6 @@
                             <a href="mailto:lekisatradingltd@gmail.com" class="text-muted small"><i
                                     class="fas fa-envelope text-primary me-2"></i>lekisatradingltd@gmail.com</a>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
@@ -87,14 +201,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-0 mx-lg-auto">
-                        <a href="index" class="nav-item nav-link active">Home</a>
+                        <a href="index" class="nav-item nav-link">Home</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link" data-bs-toggle="dropdown">
                                 <span class="dropdown-toggle">About</span>
                             </a>
                             <div class="dropdown-menu">
                                 <a href="about" class="dropdown-item">About Us</a>
-
                                 <a href="policy" class="dropdown-item">Our Policy</a>
                             </div>
                         </div>
@@ -102,7 +215,6 @@
                         <a href="staff" class="nav-item nav-link">Staff</a>
                         <a href="gallery" class="nav-item nav-link active">Gallery</a>
                         <a href="contact" class="nav-item nav-link">Contact</a>
-
                     </div>
                 </div>
                 <div class="d-none d-xl-flex flex-shrink-0 ps-4">
@@ -124,68 +236,102 @@
     <!-- Navbar & Hero End -->
 
     <!-- Gallery Start -->
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="img/g1.jpeg" target="_blank">
-                        <img src="img/g1.jpeg" alt="Image 1" class="img-fluid">
-                        <div class="caption">
-                            <p></p>
-                        </div>
-                    </a>
-                </div>
+    <div class="container-fluid gallery-section">
+        <div class="container">
+            <div class="gallery-header wow fadeInUp" data-wow-delay="0.1s">
+                <h2>Our Gallery</h2>
+                <p>Explore our chemical distribution facilities, products, and team in action</p>
             </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="img/g2.jpeg" target="_blank">
-                        <img src="img/g2.jpeg" alt="Image 2" class="img-fluid">
-                        <div class="caption">
-                            <p></p>
-                        </div>
-                    </a>
-                </div>
+
+            <div class="gallery-filter wow fadeIn" data-wow-delay="0.2s">
+                <button class="btn btn-primary active" data-filter="all">All</button>
+                <button class="btn btn-outline-primary" data-filter="facility">Facilities</button>
+                <button class="btn btn-outline-primary" data-filter="products">Products</button>
+                <button class="btn btn-outline-primary" data-filter="team">Team</button>
             </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="img/g3.jpeg" target="_blank">
-                        <img src="img/g3.jpeg" alt="Image 3" class="img-fluid">
-                        <div class="caption">
-                            <p></p>
-                        </div>
-                    </a>
+
+            <div class="row gallery-container">
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="facility">
+                    <div class="gallery-img-container">
+                        <img src="img/g1.jpeg" alt="Our Facility" class="gallery-img">
+                        <a href="img/g1.jpeg" data-lightbox="gallery" data-title="Our Modern Facility"
+                            class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-icon"></i>
+                        </a>
+                    </div>
+                    <div class="gallery-caption">
+                        <h5>Modern Facility</h5>
+                        <p>Our state-of-the-art chemical storage facility</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="img/g4.jpg" target="_blank">
-                        <img src="img/g4.jpg" alt="Image 4" class="img-fluid">
-                        <div class="caption">
-                            <p></p>
-                        </div>
-                    </a>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="products">
+                    <div class="gallery-img-container">
+                        <img src="img/g2.jpeg" alt="Chemical Products" class="gallery-img">
+                        <a href="img/g2.jpeg" data-lightbox="gallery" data-title="Chemical Products"
+                            class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-icon"></i>
+                        </a>
+                    </div>
+                    <div class="gallery-caption">
+                        <h5>Quality Products</h5>
+                        <p>Our range of industrial chemical products</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="img/g5.jpg" target="_blank">
-                        <img src="img/g5.jpg" alt="Image 5" class="img-fluid">
-                        <div class="caption">
-                            <p></p>
-                        </div>
-                    </a>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="team">
+                    <div class="gallery-img-container">
+                        <img src="img/g3.jpeg" alt="Our Team" class="gallery-img">
+                        <a href="img/g3.jpeg" data-lightbox="gallery" data-title="Our Professional Team"
+                            class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-icon"></i>
+                        </a>
+                    </div>
+                    <div class="gallery-caption">
+                        <h5>Expert Team</h5>
+                        <p>Our dedicated team of chemical experts</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="img/g6.jpg" target="_blank">
-                        <img src="img/g6.jpg" alt="Image 6" class="img-fluid">
-                        <div class="caption">
-                            <p></p>
-                        </div>
-                    </a>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="facility">
+                    <div class="gallery-img-container">
+                        <img src="img/g4.jpg" alt="Storage Area" class="gallery-img">
+                        <a href="img/g4.jpg" data-lightbox="gallery" data-title="Storage Area" class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-icon"></i>
+                        </a>
+                    </div>
+                    <div class="gallery-caption">
+                        <h5>Storage Area</h5>
+                        <p>Secure storage for all chemical products</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="products">
+                    <div class="gallery-img-container">
+                        <img src="img/g5.jpg" alt="Chemical Packaging" class="gallery-img">
+                        <a href="img/g5.jpg" data-lightbox="gallery" data-title="Chemical Packaging"
+                            class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-icon"></i>
+                        </a>
+                    </div>
+                    <div class="gallery-caption">
+                        <h5>Secure Packaging</h5>
+                        <p>Industry-standard packaging for safety</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="team">
+                    <div class="gallery-img-container">
+                        <img src="img/g6.jpg" alt="Team Work" class="gallery-img">
+                        <a href="img/g6.jpg" data-lightbox="gallery" data-title="Team Collaboration"
+                            class="gallery-overlay">
+                            <i class="fas fa-search-plus gallery-icon"></i>
+                        </a>
+                    </div>
+                    <div class="gallery-caption">
+                        <h5>Team Collaboration</h5>
+                        <p>Our team working together to serve you better</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -238,7 +384,7 @@
                                                 <img src="img/f1.jpg" class="img-fluid w-100" alt="">
                                                 <div class="footer-search-icon">
                                                     <!-- <a href="img/f1.jpg" data-lightbox="footerInstagram-1" -->
-                                                        <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
+                                                    <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -247,7 +393,7 @@
                                                 <img src="img/f2.jpg" class="img-fluid w-100" alt="">
                                                 <div class="footer-search-icon">
                                                     <!-- <a href="img/f2.jpg" data-lightbox="footerInstagram-2" -->
-                                                        <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
+                                                    <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -256,7 +402,7 @@
                                                 <img src="img/f3.jpg" class="img-fluid w-100" alt="">
                                                 <div class="footer-search-icon">
                                                     <!-- <a href="img/f3.jpg" data-lightbox="footerInstagram-3" -->
-                                                        <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
+                                                    <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -265,7 +411,7 @@
                                                 <img src="img/f4.jpg" class="img-fluid w-100" alt="">
                                                 <div class="footer-search-icon">
                                                     <!-- <a href="img/f4.jpg" data-lightbox="footerInstagram-4" -->
-                                                        <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
+                                                    <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -274,7 +420,7 @@
                                                 <img src="img/f5.jpg" class="img-fluid w-100" alt="">
                                                 <div class="footer-search-icon">
                                                     <!-- <a href="img/f5.jpg" data-lightbox="footerInstagram-5" -->
-                                                        <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
+                                                    <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -283,7 +429,7 @@
                                                 <img src="img/f6.jpg" class="img-fluid w-100" alt="">
                                                 <div class="footer-search-icon">
                                                     <!-- <a href="img/f6.jpg" data-lightbox="footerInstagram-6" -->
-                                                        <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
+                                                    <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -366,7 +512,6 @@
         </div>
     </div>
 
-
     <!-- Footer End -->
 
     <!-- Copyright Start -->
@@ -379,7 +524,6 @@
                         reserved.</span>
                 </div>
                 <div class="col-md-6 text-center text-md-start text-body">
-
                     Designed By <a class="border-bottom text-white" href="https://muli-samuel.onrender.com"
                         target="_blank">Samuel Muli</a>
                 </div>
@@ -388,10 +532,8 @@
     </div>
     <!-- Copyright End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -403,9 +545,36 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Gallery Filter Script -->
+    <script>
+        $(document).ready(function () {
+            // Initialize lightbox
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'showImageNumberLabel': true,
+                'alwaysShowNavOnTouchDevices': true
+            });
+
+            // Filter functionality
+            $('.gallery-filter .btn').on('click', function () {
+                $('.gallery-filter .btn').removeClass('active').addClass('btn-outline-primary');
+                $(this).removeClass('btn-outline-primary').addClass('active');
+
+                const filter = $(this).attr('data-filter');
+
+                if (filter === 'all') {
+                    $('.gallery-item').show();
+                } else {
+                    $('.gallery-item').hide();
+                    $(`.gallery-item[data-category="${filter}"]`).show();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
