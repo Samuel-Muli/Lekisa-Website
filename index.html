@@ -3,296 +3,90 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Lekisa Trading Limited - Industrial Chemical Distributor</title>
-    <meta content="Chemical Distributer, industrial chemical Distributer, industrial chemical seller" name="keywords">
-    <meta content="A chemical distribution company specializing in industrial chemicals" name="description">
+    <title>Lekisa Trading Limited — Industrial Chemical Distributor</title>
+    <meta name="keywords" content="industrial chemicals, chemical distributor Kenya, Lekisa Trading, chemical supply Nairobi">
+    <meta name="description" content="Lekisa Trading Limited — Kenya's trusted partner in top-tier industrial chemical distribution, committed to quality, safety, and sustainability.">
     <meta name="author" content="Samuel Muli">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#0d6efd">
+    <meta name="theme-color" content="#0b1e3d">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Google Web Fonts -->
+    <!-- Fonts: Syne (headings) + Lora (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
+    <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
+    <!-- Libraries -->
     <link rel="stylesheet" href="lib/animate/animate.min.css" />
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Bootstrap + Styles -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="img/1.jpg">
-
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-    <style>
-        /* Custom Styles for Enhanced Design */
-        :root {
-            --primary: #0d6efd;
-            --secondary: #6c757d;
-            --light: #f8f9fa;
-            --dark: #212529;
-        }
-
-        .hero-section {
-            background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.9)), url('/img/carousel-1.png') center/cover no-repeat;
-            color: white;
-            padding: 6rem 0;
-        }
-
-        .mission-vision-section {
-            background-color: var(--light);
-            padding: 5rem 0;
-        }
-
-        .value-card {
-            border: none;
-            border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
-        }
-
-        .value-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .value-icon {
-            width: 70px;
-            height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            margin: 0 auto 1.5rem;
-            background-color: rgba(13, 110, 253, 0.1);
-            color: var(--primary);
-            font-size: 1.8rem;
-        }
-
-        .stats-section {
-            background: linear-gradient(rgba(13, 110, 253, 0.9), rgba(13, 110, 253, 0.9)), url('/img/f3.jpg') center/cover fixed no-repeat;
-            color: white;
-            padding: 4rem 0;
-        }
-
-        .stat-item {
-            text-align: center;
-            padding: 1.5rem;
-        }
-
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .ceo-statement {
-            background-color: var(--light);
-            border-left: 5px solid var(--primary);
-            padding: 2rem;
-            margin: 2rem 0;
-        }
-
-        .service-card {
-            border: none;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-            height: 100%;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .service-icon {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-
-        .team-member {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .team-img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 auto 1.5rem;
-            border: 5px solid var(--light);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .testimonial-card {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-        }
-
-        .cta-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/2.jpeg') center/cover no-repeat;
-            color: white;
-            padding: 5rem 0;
-            text-align: center;
-        }
-
-        @media (max-width: 768px) {
-            .hero-section {
-                padding: 4rem 0;
-            }
-
-            .stat-number {
-                font-size: 2.5rem;
-            }
-        }
-
-        /* Footer Styles */
-        .footer {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
-        }
-
-        .footer-item h4 {
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            position: relative;
-        }
-
-        .footer-item h4::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -8px;
-            width: 50px;
-            height: 2px;
-            background: var(--primary);
-        }
-
-        .footer-social .btn {
-            width: 45px;
-            height: 45px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            border: 2px solid var(--primary);
-        }
-
-        .footer-social .btn:hover {
-            background: var(--primary) !important;
-            transform: translateY(-3px);
-        }
-
-        .btn-square {
-            width: 45px;
-            height: 45px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .copyright {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .text-white-50 {
-            color: rgba(255, 255, 255, 0.7) !important;
-        }
-
-        .footer a.text-white-50:hover {
-            color: white !important;
-            padding-left: 5px;
-            transition: all 0.3s ease;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .footer-item {
-                text-align: center;
-                margin-bottom: 2rem;
-            }
-
-            .footer-item h4::after {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-
-            .footer-social {
-                justify-content: center;
-            }
-        }
-    </style>
+    <link rel="icon" href="img/1.jpg">
 </head>
 
 <body>
 
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+    <!-- Spinner -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border" style="width:3rem;height:3rem;" role="status">
+            <span class="visually-hidden">Loading…</span>
         </div>
     </div>
-    <!-- Spinner End -->
 
-    <!-- Topbar Start -->
-    <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+    <!-- Topbar -->
+    <div class="container-fluid topbar px-0 px-lg-4 py-2 d-none d-lg-block">
         <div class="container">
             <div class="row gx-0 align-items-center">
-                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                    <div class="d-flex flex-wrap">
-                        <div class="ps-3">
-                            <a href="mailto:lekisatradingltd@gmail.com" class="text-muted small"><i
-                                    class="fas fa-envelope text-primary me-2"></i>lekisatradingltd@gmail.com</a>
-                        </div>
+                <div class="col-lg-8 text-center text-lg-start">
+                    <div class="d-flex flex-wrap gap-3 align-items-center">
+                        <a href="mailto:info@lekisatrading.co.ke" class="small d-flex align-items-center gap-2">
+                            <i class="fas fa-envelope" style="color:var(--ltl-gold)"></i>
+                            info@lekisatrading.co.ke
+                        </a>
+                        <span class="text-white-50" style="opacity:.3">|</span>
+                        <a href="tel:+254713506664" class="small d-flex align-items-center gap-2">
+                            <i class="fas fa-phone-alt" style="color:var(--ltl-gold)"></i>
+                            +254 713 506 664
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-flex justify-content-end">
-                        <div class="d-flex border-end border-primary pe-3">
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                <div class="col-lg-4 text-end">
+                    <div class="d-flex justify-content-end align-items-center gap-3">
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
 
-    <!-- Navbar & Hero Start -->
+    <!-- Navbar -->
     <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="index" class="navbar-brand p-0">
-                    <h1 class="text-primary mb-0"><i class="fab fa-slack me-2"></i>LTL</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                    <h1 class="mb-0" style="font-family:'Syne',sans-serif;font-weight:800;letter-spacing:-0.03em;color:var(--ltl-navy)">
+                        <span style="color:var(--ltl-gold)">L</span>TL
+                    </h1>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-0 mx-lg-auto">
+                    <div class="navbar-nav mx-auto">
                         <a href="index" class="nav-item nav-link active">Home</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">About</span>
-                            </a>
+                            <a href="#" class="nav-link dropdown-toggle">About</a>
                             <div class="dropdown-menu">
                                 <a href="about" class="dropdown-item">About Us</a>
                                 <a href="policy" class="dropdown-item">Our Policy</a>
@@ -304,112 +98,95 @@
                         <a href="contact" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
-                <div class="d-none d-xl-flex flex-shrink-0 ps-4">
-                    <a href="tel:+254713506664"
-                        class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
-                        data-wow-delay=".9s">
-                        <i class="fa fa-phone-alt fa-2x"></i>
-                        <div class="position-absolute" style="top: 7px; right: 12px;">
-                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                        </div>
+                <div class="d-none d-xl-flex align-items-center flex-shrink-0 ps-4 gap-3">
+                    <a href="tel:+254713506664" class="btn btn-lg-square rounded-circle" style="background:var(--ltl-gold-pale);color:var(--ltl-navy);">
+                        <i class="fa fa-phone-alt"></i>
                     </a>
-                    <div class="d-flex flex-column ms-3">
-                        <span>Call to Our Experts</span>
-                        <a href="tel:+254713506664"><span class="text-dark">+254 713506664</span></a>
+                    <div class="d-flex flex-column">
+                        <span style="font-family:'Syne',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ltl-muted)">Call Our Experts</span>
+                        <a href="tel:+254713506664" style="font-family:'Syne',sans-serif;font-weight:700;color:var(--ltl-navy);text-decoration:none;">+254 713 506 664</a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-    <!-- Navbar & Hero End -->
 
-    <!-- Hero Section Start -->
+    <!-- Hero Section -->
     <div class="container-fluid hero-section">
-        <div class="container">
-            <div class="row align-items-center">
+        <div class="container position-relative" style="z-index:2">
+            <div class="row align-items-center g-5">
                 <div class="col-lg-7 wow fadeInLeft">
-                    <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To Lekisa Trading Limited</h4>
-                    <h1 class="display-3 text-white mb-4">Your Trusted Chemical Distribution Partner</h1>
-                    <p class="lead text-white mb-4">Providing top-tier industrial chemicals with commitment to quality,
-                        safety, and environmental responsibility</p>
+                    <p class="label-gold mb-3">Welcome to Lekisa Trading Limited</p>
+                    <h1 class="display-3 mb-4">Your Trusted Chemical Distribution Partner</h1>
+                    <p class="lead text-white-50 mb-5">Providing top-tier industrial chemicals with commitment to quality, safety, and environmental responsibility across East Africa.</p>
                     <div class="d-flex flex-wrap gap-3">
-                        <a href="contact" class="btn btn-light rounded-pill py-3 px-4">Contact Us</a>
-                        <a href="about" class="btn btn-outline-light rounded-pill py-3 px-4">Learn More</a>
+                        <a href="contact" class="btn btn-primary rounded-pill py-3 px-5">Get In Touch</a>
+                        <a href="about" class="btn btn-outline-light rounded-pill py-3 px-5">Learn More</a>
                     </div>
                 </div>
-                <div class="col-lg-5 wow fadeInRight">
-                    <img src="img/hero-image.png" class="img-fluid" alt="Industrial Chemicals">
+                <div class="col-lg-5 wow fadeInRight d-none d-lg-block">
+                    <img src="img/hero-image.png" class="img-fluid" alt="Industrial Chemicals" style="filter:drop-shadow(0 20px 40px rgba(0,0,0,0.3))">
                 </div>
             </div>
         </div>
     </div>
-    <!-- Hero Section End -->
 
-    <!-- Mission & Vision Section Start -->
+    <!-- Mission & Vision -->
     <div class="container-fluid mission-vision-section py-5">
         <div class="container py-5">
-            <div class="row g-5">
+            <div class="row g-4">
                 <div class="col-lg-6 wow fadeInLeft">
-                    <div class="card value-card h-100 border-0 shadow-sm">
+                    <div class="card value-card h-100 border-0">
                         <div class="card-body text-center p-5">
                             <div class="value-icon">
                                 <i class="fas fa-bullseye"></i>
                             </div>
                             <h3 class="card-title mb-3">Our Mission</h3>
-                            <p class="card-text">To reliably and efficiently supply top-tier industrial chemicals that
-                                meet the diverse needs of our customers, while upholding our commitment to environmental
-                                responsibility and sustainable practices.</p>
+                            <p class="card-text text-muted">To reliably and efficiently supply top-tier industrial chemicals that meet the diverse needs of our customers, while upholding our commitment to environmental responsibility and sustainable practices.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInRight">
-                    <div class="card value-card h-100 border-0 shadow-sm">
+                    <div class="card value-card h-100 border-0">
                         <div class="card-body text-center p-5">
                             <div class="value-icon">
                                 <i class="fas fa-eye"></i>
                             </div>
                             <h3 class="card-title mb-3">Our Vision</h3>
-                            <p class="card-text">To be a trusted partner and industry leader in supplying top-quality
-                                industrial chemicals, fostering sustainable growth and excellence across global markets.
-                            </p>
+                            <p class="card-text text-muted">To be a trusted partner and industry leader in supplying top-quality industrial chemicals, fostering sustainable growth and excellence across global markets.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Mission & Vision Section End -->
 
-    <!-- About Start -->
-    <div class="container-fluid bg-light about py-5">
+    <!-- About -->
+    <div class="container-fluid bg-white py-5">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInLeft">
-                    <h4 class="text-primary">About Our Company</h4>
+                    <p class="label-gold mb-2">About Our Company</p>
                     <h2 class="display-5 mb-4">Who We Are</h2>
-                    <p class="mb-4">Lekisa Trading Limited is a reputable and extensively diversified company
-                        specializing in industrial chemicals. At our core lie the fundamental principles of integrity,
-                        customer centricity, and partnerships.</p>
-                    <p class="mb-4">We strive to build trusted partnerships with our clients, customers, and
-                        stakeholders which are vital to our operations. At Lekisa Trading Limited, quality isn't just a
-                        strategy for us—it is the cornerstone of competitive edge and future expansion.</p>
+                    <p class="text-muted mb-4">Lekisa Trading Limited is a reputable and extensively diversified company specializing in industrial chemicals. At our core lie the fundamental principles of integrity, customer centricity, and partnerships.</p>
+                    <p class="text-muted mb-4">We strive to build trusted partnerships with our clients, customers, and stakeholders which are vital to our operations. At Lekisa Trading Limited, quality isn't just a strategy — it is the cornerstone of our competitive edge and future expansion.</p>
                     <a href="about" class="btn btn-primary rounded-pill py-3 px-5">More About Us</a>
                 </div>
                 <div class="col-lg-6 wow fadeInRight">
                     <div class="row g-4">
                         <div class="col-12">
-                            <img src="img/a1.jpg" class="img-fluid rounded shadow" alt="Our Facility">
+                            <img src="img/a1.jpg" class="img-fluid rounded-3 shadow-sm" alt="Our Facility" style="border:1px solid rgba(11,30,61,0.07)">
                         </div>
                         <div class="col-sm-6">
-                            <div class="bg-white rounded p-4 text-center shadow-sm">
-                                <h3 class="text-primary mb-0" data-toggle="counter-up">11</h3>
-                                <p class="mb-0">Chemical Agents</p>
+                            <div class="rounded-3 p-4 text-center" style="background:var(--ltl-gold-pale);border:1px solid rgba(201,168,76,0.25)">
+                                <h3 class="mb-1" style="color:var(--ltl-navy);font-family:'Syne',sans-serif;font-weight:800;" data-toggle="counter-up">11</h3>
+                                <p class="mb-0 text-muted small" style="font-family:'Syne',sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase;">Chemical Agents</p>
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div class="bg-white rounded p-4 text-center shadow-sm">
-                                <h3 class="text-primary mb-0" data-toggle="counter-up">369</h3>
-                                <p class="mb-0">Successful Deliveries</p>
+                            <div class="rounded-3 p-4 text-center" style="background:var(--ltl-gold-pale);border:1px solid rgba(201,168,76,0.25)">
+                                <h3 class="mb-1" style="color:var(--ltl-navy);font-family:'Syne',sans-serif;font-weight:800;" data-toggle="counter-up">369</h3>
+                                <p class="mb-0 text-muted small" style="font-family:'Syne',sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase;">Successful Deliveries</p>
                             </div>
                         </div>
                     </div>
@@ -417,97 +194,77 @@
             </div>
         </div>
     </div>
-    <!-- About End -->
 
-    <!-- Core Values Section Start -->
-    <div class="container-fluid py-5">
+    <!-- Core Values -->
+    <div class="container-fluid py-5" style="background:var(--ltl-smoke)">
         <div class="container py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                <h4 class="text-primary">Our Foundation</h4>
-                <h2 class="display-5 mb-4">Core Values</h2>
+            <div class="text-center mx-auto pb-5 wow fadeInUp" style="max-width:700px">
+                <p class="label-gold mb-2">Our Foundation</p>
+                <h2 class="display-5 mb-3">Core Values</h2>
                 <p class="lead">The principles that guide everything we do</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="card value-card h-100">
                         <div class="card-body p-4 text-center">
-                            <div class="value-icon">
-                                <i class="fas fa-award"></i>
-                            </div>
-                            <h5 class="card-title">Quality Assurance</h5>
-                            <p class="card-text">We guarantee reliable provision of high quality chemicals that align
-                                with industry benchmarks and customer requirements.</p>
+                            <div class="value-icon"><i class="fas fa-award"></i></div>
+                            <h5 class="card-title mb-2" style="font-family:'Syne',sans-serif">Quality Assurance</h5>
+                            <p class="card-text text-muted">We guarantee reliable provision of high quality chemicals that align with industry benchmarks and customer requirements.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="card value-card h-100">
                         <div class="card-body p-4 text-center">
-                            <div class="value-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <h5 class="card-title">Customer Commitment</h5>
-                            <p class="card-text">We put customer needs and satisfaction first by offering responsive
-                                services, dependable supply and customized solutions.</p>
+                            <div class="value-icon"><i class="fas fa-users"></i></div>
+                            <h5 class="card-title mb-2" style="font-family:'Syne',sans-serif">Customer Commitment</h5>
+                            <p class="card-text text-muted">We put customer needs and satisfaction first by offering responsive services, dependable supply and customized solutions.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="card value-card h-100">
                         <div class="card-body p-4 text-center">
-                            <div class="value-icon">
-                                <i class="fas fa-handshake"></i>
-                            </div>
-                            <h5 class="card-title">Integrity & Transparency</h5>
-                            <p class="card-text">We deploy unmatched commitment to ethical standards in all our
-                                dealings, ensuring transparency in every interaction.</p>
+                            <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                            <h5 class="card-title mb-2" style="font-family:'Syne',sans-serif">Integrity &amp; Transparency</h5>
+                            <p class="card-text text-muted">We deploy unmatched commitment to ethical standards in all our dealings, ensuring transparency in every interaction.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="card value-card h-100">
                         <div class="card-body p-4 text-center">
-                            <div class="value-icon">
-                                <i class="fas fa-balance-scale"></i>
-                            </div>
-                            <h5 class="card-title">Accountability</h5>
-                            <p class="card-text">We steadfastly uphold our commitments and are responsible for what we
-                                do, standing behind our products and services.</p>
+                            <div class="value-icon"><i class="fas fa-balance-scale"></i></div>
+                            <h5 class="card-title mb-2" style="font-family:'Syne',sans-serif">Accountability</h5>
+                            <p class="card-text text-muted">We steadfastly uphold our commitments and are responsible for what we do, standing behind our products and services.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="card value-card h-100">
                         <div class="card-body p-4 text-center">
-                            <div class="value-icon">
-                                <i class="fas fa-lightbulb"></i>
-                            </div>
-                            <h5 class="card-title">Innovation</h5>
-                            <p class="card-text">We go beyond obvious solutions and business trends, continuously
-                                seeking better ways to serve our customers.</p>
+                            <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                            <h5 class="card-title mb-2" style="font-family:'Syne',sans-serif">Innovation</h5>
+                            <p class="card-text text-muted">We go beyond obvious solutions and business trends, continuously seeking better ways to serve our customers.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="card value-card h-100">
                         <div class="card-body p-4 text-center">
-                            <div class="value-icon">
-                                <i class="fas fa-leaf"></i>
-                            </div>
-                            <h5 class="card-title">Environmental Responsibility</h5>
-                            <p class="card-text">We promote sustainable practices and comply with regulatory standards
-                                to reduce environmental footprint.</p>
+                            <div class="value-icon"><i class="fas fa-leaf"></i></div>
+                            <h5 class="card-title mb-2" style="font-family:'Syne',sans-serif">Environmental Responsibility</h5>
+                            <p class="card-text text-muted">We promote sustainable practices and comply with regulatory standards to reduce our environmental footprint.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Core Values Section End -->
 
-    <!-- Stats Section Start -->
-    <div class="container-fluid stats-section">
-        <div class="container">
+    <!-- Stats -->
+    <div class="container-fluid stats-section py-5">
+        <div class="container py-3 position-relative" style="z-index:2">
             <div class="row">
                 <div class="col-md-3 col-6">
                     <div class="stat-item wow fadeInUp" data-wow-delay="0.1s">
@@ -536,26 +293,22 @@
             </div>
         </div>
     </div>
-    <!-- Stats Section End -->
 
-    <!-- Service Start -->
-    <div class="container-fluid service py-5">
+    <!-- Services -->
+    <div class="container-fluid py-5 bg-white">
         <div class="container py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                <h4 class="text-primary">Our Services</h4>
-                <h2 class="display-5 mb-4">Comprehensive Chemical Solutions</h2>
-                <p class="lead">We offer end-to-end chemical distribution services tailored to your industry needs</p>
+            <div class="text-center mx-auto pb-5 wow fadeInUp" style="max-width:700px">
+                <p class="label-gold mb-2">Our Services</p>
+                <h2 class="display-5 mb-3">Comprehensive Chemical Solutions</h2>
+                <p class="lead">End-to-end distribution services tailored to your industry needs</p>
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="service-card card h-100">
                         <div class="card-body p-4 text-center">
-                            <div class="service-icon">
-                                <i class="fas fa-flask"></i>
-                            </div>
-                            <h4 class="card-title mb-3">Chemical Procurement</h4>
-                            <p class="card-text">We source high-quality industrial chemicals from reputable
-                                manufacturers worldwide, ensuring consistent supply and competitive pricing.</p>
+                            <div class="service-icon mx-auto mb-3"><i class="fas fa-flask"></i></div>
+                            <h4 class="card-title mb-3" style="font-family:'Syne',sans-serif">Chemical Procurement</h4>
+                            <p class="card-text text-muted">We source high-quality industrial chemicals from reputable manufacturers worldwide, ensuring consistent supply and competitive pricing.</p>
                             <a href="service" class="btn btn-primary rounded-pill mt-3">Learn More</a>
                         </div>
                     </div>
@@ -563,12 +316,9 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="service-card card h-100">
                         <div class="card-body p-4 text-center">
-                            <div class="service-icon">
-                                <i class="fas fa-truck-loading"></i>
-                            </div>
-                            <h4 class="card-title mb-3">Logistics & Distribution</h4>
-                            <p class="card-text">Our efficient logistics network ensures timely and safe delivery of
-                                chemicals to your location, with proper handling and documentation.</p>
+                            <div class="service-icon mx-auto mb-3"><i class="fas fa-truck-loading"></i></div>
+                            <h4 class="card-title mb-3" style="font-family:'Syne',sans-serif">Logistics &amp; Distribution</h4>
+                            <p class="card-text text-muted">Our efficient logistics network ensures timely and safe delivery of chemicals to your location, with proper handling and documentation.</p>
                             <a href="service" class="btn btn-primary rounded-pill mt-3">Learn More</a>
                         </div>
                     </div>
@@ -576,115 +326,101 @@
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="service-card card h-100">
                         <div class="card-body p-4 text-center">
-                            <div class="service-icon">
-                                <i class="fas fa-cogs"></i>
-                            </div>
-                            <h4 class="card-title mb-3">Technical Support</h4>
-                            <p class="card-text">Our team of experts provides technical guidance on chemical
-                                applications, handling, storage, and safety protocols.</p>
+                            <div class="service-icon mx-auto mb-3"><i class="fas fa-cogs"></i></div>
+                            <h4 class="card-title mb-3" style="font-family:'Syne',sans-serif">Technical Support</h4>
+                            <p class="card-text text-muted">Our team of experts provides technical guidance on chemical applications, handling, storage, and safety protocols.</p>
                             <a href="service" class="btn btn-primary rounded-pill mt-3">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="text-center mt-5 wow fadeInUp">
                 <a href="service" class="btn btn-outline-primary rounded-pill py-3 px-5">View All Services</a>
             </div>
         </div>
     </div>
-    <!-- Service End -->
 
-    <!-- CEO Statement Start -->
-    <div class="container-fluid py-5">
+    <!-- CEO Statement -->
+    <div class="container-fluid py-5" style="background:var(--ltl-smoke)">
         <div class="container py-5">
-            <div class="row align-items-center">
+            <div class="row align-items-center g-5">
                 <div class="col-lg-4 wow fadeInLeft">
-                    <img src="img/ceo.jpg" class="img-fluid rounded shadow" alt="Stephen Kioko Mwania - CEO">
+                    <img src="img/ceo.jpg" class="img-fluid rounded-3 shadow-sm" alt="Stephen Kioko Mwania — Director & CEO" style="border:1px solid rgba(11,30,61,0.07)">
                 </div>
                 <div class="col-lg-8 wow fadeInRight">
                     <div class="ceo-statement">
-                        <h4 class="text-primary">Policy & Compliance Statement</h4>
-                        <h3 class="mb-4">From Our Director & CEO</h3>
-                        <blockquote class="blockquote">
-                            <p class="mb-4">"We aim at consistently enhancing the quality of our products while ensuring
-                                the safety of both individuals and the environment. We commit and are dedicated to
-                                safeguard and continuously enhance the quality, environment, health and occupational
-                                safety of our personnel at all times."</p>
-                            <footer class="blockquote-footer">Stephen Kioko Mwania, <cite title="Source Title">Director
-                                    & CEO</cite></footer>
+                        <p class="label-gold mb-2">Policy &amp; Compliance Statement</p>
+                        <h3 class="mb-4" style="font-family:'Syne',sans-serif">From Our Director &amp; CEO</h3>
+                        <blockquote class="blockquote mb-4">
+                            <p>"We aim at consistently enhancing the quality of our products while ensuring the safety of both individuals and the environment. We commit and are dedicated to safeguard and continuously enhance the quality, environment, health and occupational safety of our personnel at all times."</p>
+                            <footer class="blockquote-footer mt-3">
+                                Stephen Kioko Mwania, <cite>Director &amp; CEO</cite>
+                            </footer>
                         </blockquote>
-                        <a href="policy" class="btn btn-primary rounded-pill mt-3">Read Our Full Policy</a>
+                        <a href="policy" class="btn btn-primary rounded-pill py-3 px-5">Read Our Full Policy</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- CEO Statement End -->
 
-    <!-- Team Start -->
-    <div class="container-fluid team py-5 bg-light">
+    <!-- Team -->
+    <div class="container-fluid py-5 bg-white">
         <div class="container py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                <h4 class="text-primary">Our Team</h4>
-                <h2 class="display-5 mb-4">Meet Our Expert Staff</h2>
+            <div class="text-center mx-auto pb-5 wow fadeInUp" style="max-width:700px">
+                <p class="label-gold mb-2">Our Team</p>
+                <h2 class="display-5 mb-3">Meet Our Expert Staff</h2>
                 <p class="lead">Dedicated professionals committed to excellence in chemical distribution</p>
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="team-member">
                         <img src="img/ceo.jpg" class="team-img" alt="Director & CEO">
-                        <h4>Stephen Kioko Mwania</h4>
-                        <p class="text-primary">Director & CEO</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-sm btn-primary rounded-circle me-2" href="#"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-sm btn-primary rounded-circle me-2" href="#"><i
-                                    class="fas fa-envelope"></i></a>
+                        <h4 style="font-family:'Syne',sans-serif;font-weight:700">Stephen Kioko Mwania</h4>
+                        <p class="text-primary mb-3">Director &amp; CEO</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a class="btn btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width:36px;height:36px;background:var(--ltl-gold-pale);color:var(--ltl-navy)" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width:36px;height:36px;background:var(--ltl-gold-pale);color:var(--ltl-navy)" href="#"><i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="team-member">
                         <img src="img/md.jpg" class="team-img" alt="Managing Director">
-                        <h4>Managing Director</h4>
-                        <p class="text-primary">Managing Director</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-sm btn-primary rounded-circle me-2" href="#"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-sm btn-primary rounded-circle me-2" href="#"><i
-                                    class="fas fa-envelope"></i></a>
+                        <h4 style="font-family:'Syne',sans-serif;font-weight:700">Managing Director</h4>
+                        <p class="text-primary mb-3">Managing Director</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a class="btn btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width:36px;height:36px;background:var(--ltl-gold-pale);color:var(--ltl-navy)" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width:36px;height:36px;background:var(--ltl-gold-pale);color:var(--ltl-navy)" href="#"><i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="team-member">
                         <img src="img/operations-manager.jpg" class="team-img" alt="Chief Operations Manager">
-                        <h4>Chief Operations Manager</h4>
-                        <p class="text-primary">Operations Leadership</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-sm btn-primary rounded-circle me-2" href="#"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-sm btn-primary rounded-circle me-2" href="#"><i
-                                    class="fas fa-envelope"></i></a>
+                        <h4 style="font-family:'Syne',sans-serif;font-weight:700">Chief Operations Manager</h4>
+                        <p class="text-primary mb-3">Operations Leadership</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a class="btn btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width:36px;height:36px;background:var(--ltl-gold-pale);color:var(--ltl-navy)" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width:36px;height:36px;background:var(--ltl-gold-pale);color:var(--ltl-navy)" href="#"><i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.2s">
-                <a href="staff" class="btn btn-primary rounded-pill py-3 px-5">Meet Full Team</a>
+            <div class="text-center mt-5 wow fadeInUp">
+                <a href="staff" class="btn btn-outline-primary rounded-pill py-3 px-5">Meet the Full Team</a>
             </div>
         </div>
     </div>
-    <!-- Team End -->
 
-    <!-- CTA Section Start -->
+    <!-- CTA -->
     <div class="container-fluid cta-section">
-        <div class="container">
+        <div class="container position-relative" style="z-index:2">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center wow fadeInUp">
-                    <h2 class="display-5 text-white mb-4">Ready to Partner With Us?</h2>
-                    <p class="lead text-white mb-5">Experience the Lekisa difference in chemical distribution. Contact
-                        us today to discuss your requirements.</p>
+                    <p class="label-gold mb-3">Partner With Us</p>
+                    <h2 class="display-5 text-white mb-4">Ready to Work Together?</h2>
+                    <p class="lead text-white-50 mb-5">Experience the Lekisa difference in chemical distribution. Contact us today to discuss your requirements.</p>
                     <div class="d-flex flex-wrap gap-3 justify-content-center">
                         <a href="contact" class="btn btn-primary rounded-pill py-3 px-5">Get In Touch</a>
                         <a href="tel:+254713506664" class="btn btn-outline-light rounded-pill py-3 px-5">Call Now</a>
@@ -693,28 +429,27 @@
             </div>
         </div>
     </div>
-    <!-- CTA Section End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid footer bg-dark py-5 wow fadeIn" data-wow-delay="0.2s">
+    <!-- Footer -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
         <div class="container py-5">
             <div class="row g-5">
-                <!-- Company Info & Social Links -->
+
+                <!-- Brand -->
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-item mb-4">
-                        <a href="index" class="p-0 mb-4 d-block">
-                            <h3 class="text-white"><i class="fab fa-slack me-2"></i>Lekisa Trading Limited</h3>
+                        <a href="home" class="p-0 mb-4 d-block text-decoration-none">
+                            <h3 class="text-white mb-0" style="font-family:'Syne',sans-serif;font-weight:800;letter-spacing:-0.02em">
+                                <span style="color:var(--ltl-gold)">L</span>TL
+                                <span style="font-size:.7em;font-weight:500;opacity:.7;letter-spacing:0"> Lekisa Trading</span>
+                            </h3>
                         </a>
-                        <p class="text-white-50 mb-4">Your trusted partner in delivering top-tier industrial chemicals
-                            with commitment to quality and environmental responsibility.</p>
-                        <div class="footer-social d-flex">
-                            <a class="btn btn-lg-square rounded-circle me-2" href="#"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg-square rounded-circle me-2" href="#"><i
-                                    class="fab fa-instagram"></i></a>
-                            <a class="btn btn-lg-square rounded-circle me-0" href="#"><i
-                                    class="fab fa-linkedin-in"></i></a>
+                        <p class="text-white-50 mb-4">Your trusted partner in delivering top-tier industrial chemicals with commitment to quality and environmental responsibility.</p>
+                        <div class="footer-social d-flex gap-2">
+                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -723,141 +458,116 @@
                 <div class="col-lg-2 col-md-6">
                     <div class="footer-item mb-4">
                         <h4 class="text-white mb-4">Quick Links</h4>
-                        <div class="d-flex flex-column">
-                            <a href="about" class="text-white-50 mb-2 text-decoration-none"><i
-                                    class="fas fa-angle-right me-2"></i> About Us</a>
-                            <a href="service" class="text-white-50 mb-2 text-decoration-none"><i
-                                    class="fas fa-angle-right me-2"></i> Services</a>
-                            <a href="staff" class="text-white-50 mb-2 text-decoration-none"><i
-                                    class="fas fa-angle-right me-2"></i> Our Team</a>
-                            <a href="gallery" class="text-white-50 mb-2 text-decoration-none"><i
-                                    class="fas fa-angle-right me-2"></i> Gallery</a>
-                            <a href="contact" class="text-white-50 mb-2 text-decoration-none"><i
-                                    class="fas fa-angle-right me-2"></i> Contact</a>
-                        </div>
+                        <a href="about" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>About Us</a>
+                        <a href="service" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Services</a>
+                        <a href="staff" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Our Team</a>
+                        <a href="gallery" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Gallery</a>
+                        <a href="contact" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Contact</a>
                     </div>
                 </div>
 
-                <!-- Contact Information -->
+                <!-- Contact -->
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-item mb-4">
                         <h4 class="text-white mb-4">Contact Info</h4>
-                        <div class="d-flex mb-3">
-                            <div
-                                class="btn-square bg-primary rounded-circle flex-shrink-0 me-3 d-flex align-items-center justify-content-center">
-                                <i class="fas fa-map-marker-alt text-white"></i>
+                        <div class="d-flex mb-3 gap-3">
+                            <div class="btn-square bg-primary rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div>
-                                <h6 class="text-white mb-1">Address</h6>
-                                <p class="text-white-50 mb-0">Godown No.4, Off Outering Road<br>Donholm, Nairobi – KENYA
-                                </p>
+                                <h6 class="text-white mb-1" style="font-family:'Syne',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase">Address</h6>
+                                <p class="text-white-50 mb-0 small">Godown No.4, Off Outering Road<br>Donholm, Nairobi – KENYA</p>
                             </div>
                         </div>
-                        <div class="d-flex mb-3">
-                            <div
-                                class="btn-square bg-primary rounded-circle flex-shrink-0 me-3 d-flex align-items-center justify-content-center">
-                                <i class="fas fa-envelope text-white"></i>
+                        <div class="d-flex mb-3 gap-3">
+                            <div class="btn-square bg-primary rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-envelope"></i>
                             </div>
                             <div>
-                                <h6 class="text-white mb-1">Email</h6>
-                                <a href="mailto:lekisatradingltd@gmail.com"
-                                    class="text-white-50 text-decoration-none">lekisatradingltd@gmail.com</a>
+                                <h6 class="text-white mb-1" style="font-family:'Syne',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase">Email</h6>
+                                <a href="mailto:info@lekisatrading.co.ke" class="text-white-50 text-decoration-none small">info@lekisatrading.co.ke</a>
                             </div>
                         </div>
-                        <div class="d-flex">
-                            <div
-                                class="btn-square bg-primary rounded-circle flex-shrink-0 me-3 d-flex align-items-center justify-content-center">
-                                <i class="fas fa-phone-alt text-white"></i>
+                        <div class="d-flex gap-3">
+                            <div class="btn-square bg-primary rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-phone-alt"></i>
                             </div>
                             <div>
-                                <h6 class="text-white mb-1">Phone</h6>
-                                <a href="tel:+254713506664" class="text-white-50 text-decoration-none">+254
-                                    713506664</a><br>
-                                <a href="tel:+254741077018" class="text-white-50 text-decoration-none">+254
-                                    741077018</a>
+                                <h6 class="text-white mb-1" style="font-family:'Syne',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase">Phone</h6>
+                                <a href="tel:+254713506664" class="text-white-50 text-decoration-none small d-block">+254 713 506 664</a>
+                                <a href="tel:+254741077018" class="text-white-50 text-decoration-none small d-block">+254 741 077 018</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Newsletter & Location -->
+                <!-- Map + Newsletter -->
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-item mb-4">
                         <h4 class="text-white mb-4">Location</h4>
-                        <div class="rounded mb-4 overflow-hidden">
+                        <div class="rounded-3 mb-4 overflow-hidden" style="border:1px solid rgba(201,168,76,0.15)">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d947.8562265141337!2d36.89229626954762!3d-1.3029259999177893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTgnMTAuNSJTIDM2wrA1MyczNC42IkU!5e1!3m2!1sen!2ske!4v1753177593126!5m2!1sen!2ske"
-                                width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen=""
-                                loading="lazy" title="Our Location">
+                                width="100%" height="145" style="border:0;" allowfullscreen="" loading="lazy" title="Our Location">
                             </iframe>
                         </div>
-
                         <h4 class="text-white mb-3">Newsletter</h4>
-                        <p class="text-white-50 mb-3">Subscribe to our newsletter for updates</p>
-                        <div class="position-relative mb-4">
-                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
-                                placeholder="Your email address">
-                            <button type="button"
-                                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Sign
-                                Up</button>
+                        <p class="text-white-50 mb-3 small">Subscribe for product updates and industry news.</p>
+                        <div class="position-relative">
+                            <input class="form-control rounded-pill py-3 ps-4 pe-5" type="email" placeholder="Your email address">
+                            <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">
+                                Sign Up
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Call to Action -->
-            <div class="row mt-5 pt-4 border-top border-secondary">
+            <!-- Footer bottom CTA -->
+            <div class="row mt-5 pt-4" style="border-top:1px solid rgba(255,255,255,0.06)">
                 <div class="col-12 text-center">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <div
-                            class="btn-square bg-primary rounded-circle flex-shrink-0 me-3 d-flex align-items-center justify-content-center">
-                            <i class="fa fa-phone-alt text-white"></i>
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+                        <div class="btn-square bg-primary rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fa fa-phone-alt"></i>
                         </div>
                         <div class="text-start">
-                            <span class="text-white-50">Call to Our Experts</span>
-                            <a href="tel:+254713506664" class="d-block text-white h5 mb-0 text-decoration-none">+254
-                                713506664</a>
+                            <span class="text-white-50 small" style="font-family:'Syne',sans-serif;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase">Call to Our Experts</span>
+                            <a href="tel:+254713506664" class="d-block text-white text-decoration-none" style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.1rem">+254 713 506 664</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
 
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark py-4">
+    <!-- Copyright -->
+    <div class="container-fluid copyright py-4">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     <span class="text-white-50">
-                        &copy; <a href="index" class="text-white text-decoration-none">2026 Lekisa Trading Limited</a>,
-                        All rights reserved.
+                        &copy; <a href="home">2026 Lekisa Trading Limited</a> — All rights reserved.
                     </span>
                 </div>
                 <div class="col-md-6 text-center text-md-end text-white-50">
-                    Designed By <a class="text-white text-decoration-none" href="https://muli-samuel.onrender.com"
-                        target="_blank">Samuel Muli</a>
+                    Designed by <a href="https://muli-samuel.onrender.com" target="_blank">Samuel Muli</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
