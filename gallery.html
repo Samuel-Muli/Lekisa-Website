@@ -3,209 +3,234 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Gallery - Lekisa Trading Limited</title>
-    <meta content="Chemical Distributer, industrial chemical Distributer, industrial chemical seller" name="keywords">
-    <meta content="A chemical distribution company" name="description">
+    <title>Gallery — Lekisa Trading Limited</title>
+    <meta name="keywords" content="Lekisa Trading gallery, chemical facility Kenya, industrial chemicals photos">
+    <meta name="description" content="Explore Lekisa Trading Limited's gallery — our facilities, chemical products, and team in action.">
     <meta name="author" content="Samuel Muli">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="dark-blue">
+    <meta name="theme-color" content="#0b1e3d">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Google Web Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
+    <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
+    <!-- Libraries -->
     <link rel="stylesheet" href="lib/animate/animate.min.css" />
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Bootstrap + Styles -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="img/1.jpg">
 
     <style>
-        /* Custom Gallery Styles */
-        .gallery-section {
-            padding: 5rem 0;
-            background: #f8f9fa;
+        /* ── Filter tabs ──────────────────────────────────────── */
+        .gallery-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            justify-content: center;
+            margin-bottom: 2.5rem;
         }
-
-        .gallery-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .gallery-header h2 {
-            font-size: 2.5rem;
-            color: #0d6efd;
-            margin-bottom: 1rem;
+        .gallery-filters .filter-btn {
+            font-family: 'Syne', sans-serif;
+            font-size: .78rem;
             font-weight: 700;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            padding: .6rem 1.6rem;
+            border-radius: 30px;
+            border: 2px solid rgba(11,30,61,0.12);
+            background: var(--ltl-white);
+            color: var(--ltl-navy);
+            cursor: pointer;
+            transition: var(--ease);
+        }
+        .gallery-filters .filter-btn:hover,
+        .gallery-filters .filter-btn.active {
+            background: var(--ltl-gold);
+            border-color: var(--ltl-gold);
+            color: var(--ltl-navy);
+            box-shadow: 0 4px 12px rgba(201,168,76,0.3);
         }
 
-        .gallery-header p {
-            color: #6c757d;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .gallery-filter {
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .gallery-filter .btn {
-            margin: 0.25rem;
-            border-radius: 20px;
-            padding: 0.5rem 1.5rem;
-        }
-
+        /* ── Gallery items ────────────────────────────────────── */
         .gallery-item {
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(11,30,61,0.06);
+            transition: var(--ease);
+            background: var(--ltl-white);
         }
-
         .gallery-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(201,168,76,0.2);
         }
+        .gallery-item.hidden { display: none; }
 
-        .gallery-img-container {
+        .gallery-img-wrap {
             position: relative;
             overflow: hidden;
-            height: 250px;
+            height: 240px;
         }
-
-        .gallery-img {
+        .gallery-img-wrap img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.5s ease;
+            transition: transform .5s cubic-bezier(0.4,0,0.2,1);
+            display: block;
         }
-
-        .gallery-item:hover .gallery-img {
-            transform: scale(1.05);
-        }
+        .gallery-item:hover .gallery-img-wrap img { transform: scale(1.06); }
 
         .gallery-overlay {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(13, 110, 253, 0.8);
+            inset: 0;
+            background: linear-gradient(135deg, rgba(11,30,61,0.7) 0%, rgba(11,30,61,0.5) 100%);
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap: .5rem;
             opacity: 0;
-            transition: opacity 0.3s ease;
+            transition: var(--ease);
+            text-decoration: none;
         }
-
-        .gallery-item:hover .gallery-overlay {
-            opacity: 1;
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        .gallery-overlay .overlay-icon {
+            width: 52px; height: 52px;
+            border-radius: 50%;
+            background: var(--ltl-gold);
+            color: var(--ltl-navy);
+            font-size: 1.1rem;
+            display: flex; align-items: center; justify-content: center;
+            transform: scale(0.8);
+            transition: var(--ease);
         }
+        .gallery-item:hover .overlay-icon { transform: scale(1); }
+        .gallery-overlay span {
+            font-family: 'Syne', sans-serif;
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.8);
+            transform: translateY(6px);
+            transition: var(--ease);
+        }
+        .gallery-item:hover .gallery-overlay span { transform: translateY(0); }
 
-        .gallery-icon {
-            color: #fff;
-            font-size: 2rem;
+        /* Category tag on image */
+        .gallery-tag {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            font-family: 'Syne', sans-serif;
+            font-size: .65rem;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            padding: .3rem .75rem;
+            border-radius: 20px;
+            background: var(--ltl-gold);
+            color: var(--ltl-navy);
+            z-index: 2;
         }
 
         .gallery-caption {
-            padding: 1rem;
-            background: #fff;
+            padding: 1.1rem 1.25rem;
         }
-
         .gallery-caption h5 {
-            margin-bottom: 0.5rem;
-            color: #212529;
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            font-size: .95rem;
+            color: var(--ltl-navy);
+            margin-bottom: .25rem;
         }
-
         .gallery-caption p {
-            color: #6c757d;
-            margin-bottom: 0;
-            font-size: 0.9rem;
+            font-family: 'Lora', Georgia, serif;
+            font-size: .84rem;
+            color: var(--ltl-muted);
+            margin: 0;
+            line-height: 1.5;
         }
 
-        @media (max-width: 768px) {
-            .gallery-img-container {
-                height: 200px;
-            }
+        /* Filter transition */
+        .gallery-grid .gallery-item {
+            animation: fadeInItem .35s ease forwards;
+        }
+        @keyframes fadeInItem {
+            from { opacity:0; transform:translateY(12px); }
+            to   { opacity:1; transform:translateY(0); }
+        }
 
-            .gallery-header h2 {
-                font-size: 2rem;
-            }
+        @media (max-width: 767px) {
+            .gallery-img-wrap { height: 200px; }
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+    <!-- Spinner -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border" style="width:3rem;height:3rem;" role="status">
+            <span class="visually-hidden">Loading…</span>
         </div>
     </div>
-    <!-- Spinner End -->
 
-    <!-- Topbar Start -->
-    <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+    <!-- Topbar -->
+    <div class="container-fluid topbar px-0 px-lg-4 py-2 d-none d-lg-block">
         <div class="container">
             <div class="row gx-0 align-items-center">
-                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                    <div class="d-flex flex-wrap">
-                        <div class="ps-3">
-                            <a href="mailto:lekisatradingltd@gmail.com" class="text-muted small"><i
-                                    class="fas fa-envelope text-primary me-2"></i>lekisatradingltd@gmail.com</a>
-                        </div>
+                <div class="col-lg-8 text-lg-start">
+                    <div class="d-flex flex-wrap gap-3 align-items-center">
+                        <a href="mailto:info@lekisatrading.co.ke" class="small d-flex align-items-center gap-2">
+                            <i class="fas fa-envelope" style="color:var(--ltl-gold)"></i>info@lekisatrading.co.ke
+                        </a>
+                        <span class="text-white-50" style="opacity:.3">|</span>
+                        <a href="tel:+254713506664" class="small d-flex align-items-center gap-2">
+                            <i class="fas fa-phone-alt" style="color:var(--ltl-gold)"></i>+254 713 506 664
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-flex justify-content-end">
-                        <div class="d-flex border-end border-primary pe-3">
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                <div class="col-lg-4 text-end">
+                    <div class="d-flex justify-content-end align-items-center gap-3">
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
 
-    <!-- Navbar & Hero Start -->
+    <!-- Navbar -->
     <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a href="#" class="navbar-brand p-0">
-                    <h1 class="text-primary mb-0"><i class="fab fa-slack me-2"></i>LTL</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                <a href="home" class="navbar-brand p-0">
+                    <h1 class="mb-0" style="font-family:'Syne',sans-serif;font-weight:800;letter-spacing:-0.03em;color:var(--ltl-navy)">
+                        <span style="color:var(--ltl-gold)">L</span>TL
+                    </h1>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-0 mx-lg-auto">
-                        <a href="index" class="nav-item nav-link">Home</a>
+                    <div class="navbar-nav mx-auto">
+                        <a href="home" class="nav-item nav-link">Home</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">About</span>
-                            </a>
+                            <a href="#" class="nav-link dropdown-toggle">About</a>
                             <div class="dropdown-menu">
                                 <a href="about" class="dropdown-item">About Us</a>
                                 <a href="policy" class="dropdown-item">Our Policy</a>
@@ -217,294 +242,257 @@
                         <a href="contact" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
-                <div class="d-none d-xl-flex flex-shrink-0 ps-4">
-                    <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
-                        data-wow-delay=".9s">
-                        <i class="fa fa-phone-alt fa-2x"></i>
-                        <div class="position-absolute" style="top: 7px; right: 12px;">
-                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                        </div>
+                <div class="d-none d-xl-flex align-items-center flex-shrink-0 ps-4 gap-3">
+                    <a href="tel:+254713506664" class="btn btn-lg-square rounded-circle" style="background:var(--ltl-gold-pale);color:var(--ltl-navy);">
+                        <i class="fa fa-phone-alt"></i>
                     </a>
-                    <div class="d-flex flex-column ms-3">
-                        <span>Call to Our Experts</span>
-                        <a href="tel:+254 713506664"><span class="text-dark">Free: +254 713506664</span></a>
+                    <div class="d-flex flex-column">
+                        <span style="font-family:'Syne',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ltl-muted)">Call Our Experts</span>
+                        <a href="tel:+254713506664" style="font-family:'Syne',sans-serif;font-weight:700;color:var(--ltl-navy);text-decoration:none;">+254 713 506 664</a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-    <!-- Navbar & Hero End -->
 
-    <!-- Gallery Start -->
-    <div class="container-fluid gallery-section">
-        <div class="container">
-            <div class="gallery-header wow fadeInUp" data-wow-delay="0.1s">
-                <h2>Our Gallery</h2>
-                <p>Explore our chemical distribution facilities, products, and team in action</p>
+    <!-- Breadcrumb -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width:800px">
+            <p class="label-gold mb-3 wow fadeInDown">A Visual Tour</p>
+            <h1 class="display-4 text-white mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Gallery</h1>
+            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="home">Home</a></li>
+                <li class="breadcrumb-item active">Gallery</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="container-fluid py-5" style="background:var(--ltl-smoke)">
+        <div class="container py-5">
+
+            <!-- Header -->
+            <div class="text-center mx-auto pb-5 wow fadeInUp" style="max-width:700px">
+                <p class="label-gold mb-2">Facilities · Products · Team</p>
+                <h2 class="display-5 mb-3">Inside Lekisa Trading</h2>
+                <p class="lead">Explore our chemical distribution facilities, product range, and dedicated team in action.</p>
             </div>
 
-            <div class="gallery-filter wow fadeIn" data-wow-delay="0.2s">
-                <button class="btn btn-primary active" data-filter="all">All</button>
-                <button class="btn btn-outline-primary" data-filter="facility">Facilities</button>
-                <button class="btn btn-outline-primary" data-filter="products">Products</button>
-                <button class="btn btn-outline-primary" data-filter="team">Team</button>
+            <!-- Filter Tabs -->
+            <div class="gallery-filters wow fadeIn" data-wow-delay="0.2s">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="facility">Facilities</button>
+                <button class="filter-btn" data-filter="products">Products</button>
+                <button class="filter-btn" data-filter="team">Team</button>
             </div>
 
-            <div class="row gallery-container">
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="facility">
-                    <div class="gallery-img-container">
-                        <img src="img/g1.jpeg" alt="Our Facility" class="gallery-img">
-                        <a href="img/g1.jpeg" data-lightbox="gallery" data-title="Our Modern Facility"
-                            class="gallery-overlay">
-                            <i class="fas fa-search-plus gallery-icon"></i>
-                        </a>
-                    </div>
-                    <div class="gallery-caption">
-                        <h5>Modern Facility</h5>
-                        <p>Our state-of-the-art chemical storage facility</p>
+            <!-- Grid -->
+            <div class="row g-4 gallery-grid">
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" data-category="facility">
+                    <div class="gallery-item">
+                        <div class="gallery-img-wrap">
+                            <span class="gallery-tag">Facility</span>
+                            <img src="img/g1.jpeg" alt="Our Modern Facility">
+                            <a href="img/g1.jpeg" data-lightbox="gallery" data-title="Our Modern Facility" class="gallery-overlay">
+                                <div class="overlay-icon"><i class="fas fa-search-plus"></i></div>
+                                <span>View Image</span>
+                            </a>
+                        </div>
+                        <div class="gallery-caption">
+                            <h5>Modern Facility</h5>
+                            <p>Our state-of-the-art chemical storage facility</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="products">
-                    <div class="gallery-img-container">
-                        <img src="img/g2.jpeg" alt="Chemical Products" class="gallery-img">
-                        <a href="img/g2.jpeg" data-lightbox="gallery" data-title="Chemical Products"
-                            class="gallery-overlay">
-                            <i class="fas fa-search-plus gallery-icon"></i>
-                        </a>
-                    </div>
-                    <div class="gallery-caption">
-                        <h5>Quality Products</h5>
-                        <p>Our range of industrial chemical products</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="team">
-                    <div class="gallery-img-container">
-                        <img src="img/g3.jpeg" alt="Our Team" class="gallery-img">
-                        <a href="img/g3.jpeg" data-lightbox="gallery" data-title="Our Professional Team"
-                            class="gallery-overlay">
-                            <i class="fas fa-search-plus gallery-icon"></i>
-                        </a>
-                    </div>
-                    <div class="gallery-caption">
-                        <h5>Expert Team</h5>
-                        <p>Our dedicated team of chemical experts</p>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s" data-category="products">
+                    <div class="gallery-item">
+                        <div class="gallery-img-wrap">
+                            <span class="gallery-tag">Products</span>
+                            <img src="img/g2.jpeg" alt="Chemical Products">
+                            <a href="img/g2.jpeg" data-lightbox="gallery" data-title="Quality Chemical Products" class="gallery-overlay">
+                                <div class="overlay-icon"><i class="fas fa-search-plus"></i></div>
+                                <span>View Image</span>
+                            </a>
+                        </div>
+                        <div class="gallery-caption">
+                            <h5>Quality Products</h5>
+                            <p>Our range of industrial chemical products</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="facility">
-                    <div class="gallery-img-container">
-                        <img src="img/g4.jpg" alt="Storage Area" class="gallery-img">
-                        <a href="img/g4.jpg" data-lightbox="gallery" data-title="Storage Area" class="gallery-overlay">
-                            <i class="fas fa-search-plus gallery-icon"></i>
-                        </a>
-                    </div>
-                    <div class="gallery-caption">
-                        <h5>Storage Area</h5>
-                        <p>Secure storage for all chemical products</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="products">
-                    <div class="gallery-img-container">
-                        <img src="img/g5.jpg" alt="Chemical Packaging" class="gallery-img">
-                        <a href="img/g5.jpg" data-lightbox="gallery" data-title="Chemical Packaging"
-                            class="gallery-overlay">
-                            <i class="fas fa-search-plus gallery-icon"></i>
-                        </a>
-                    </div>
-                    <div class="gallery-caption">
-                        <h5>Secure Packaging</h5>
-                        <p>Industry-standard packaging for safety</p>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-category="team">
+                    <div class="gallery-item">
+                        <div class="gallery-img-wrap">
+                            <span class="gallery-tag">Team</span>
+                            <img src="img/g3.jpeg" alt="Our Team">
+                            <a href="img/g3.jpeg" data-lightbox="gallery" data-title="Our Professional Team" class="gallery-overlay">
+                                <div class="overlay-icon"><i class="fas fa-search-plus"></i></div>
+                                <span>View Image</span>
+                            </a>
+                        </div>
+                        <div class="gallery-caption">
+                            <h5>Expert Team</h5>
+                            <p>Our dedicated team of chemical experts</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 gallery-item" data-category="team">
-                    <div class="gallery-img-container">
-                        <img src="img/g6.jpg" alt="Team Work" class="gallery-img">
-                        <a href="img/g6.jpg" data-lightbox="gallery" data-title="Team Collaboration"
-                            class="gallery-overlay">
-                            <i class="fas fa-search-plus gallery-icon"></i>
-                        </a>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" data-category="facility">
+                    <div class="gallery-item">
+                        <div class="gallery-img-wrap">
+                            <span class="gallery-tag">Facility</span>
+                            <img src="img/g4.jpg" alt="Storage Area">
+                            <a href="img/g4.jpg" data-lightbox="gallery" data-title="Secure Storage Area" class="gallery-overlay">
+                                <div class="overlay-icon"><i class="fas fa-search-plus"></i></div>
+                                <span>View Image</span>
+                            </a>
+                        </div>
+                        <div class="gallery-caption">
+                            <h5>Storage Area</h5>
+                            <p>Secure, well-organised storage for all chemical products</p>
+                        </div>
                     </div>
-                    <div class="gallery-caption">
-                        <h5>Team Collaboration</h5>
-                        <p>Our team working together to serve you better</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s" data-category="products">
+                    <div class="gallery-item">
+                        <div class="gallery-img-wrap">
+                            <span class="gallery-tag">Products</span>
+                            <img src="img/g5.jpg" alt="Chemical Packaging">
+                            <a href="img/g5.jpg" data-lightbox="gallery" data-title="Secure Chemical Packaging" class="gallery-overlay">
+                                <div class="overlay-icon"><i class="fas fa-search-plus"></i></div>
+                                <span>View Image</span>
+                            </a>
+                        </div>
+                        <div class="gallery-caption">
+                            <h5>Secure Packaging</h5>
+                            <p>Industry-standard packaging for safety and compliance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-category="team">
+                    <div class="gallery-item">
+                        <div class="gallery-img-wrap">
+                            <span class="gallery-tag">Team</span>
+                            <img src="img/g6.jpg" alt="Team Collaboration">
+                            <a href="img/g6.jpg" data-lightbox="gallery" data-title="Team Collaboration" class="gallery-overlay">
+                                <div class="overlay-icon"><i class="fas fa-search-plus"></i></div>
+                                <span>View Image</span>
+                            </a>
+                        </div>
+                        <div class="gallery-caption">
+                            <h5>Team Collaboration</h5>
+                            <p>Our team working together to serve clients better</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /.gallery-grid -->
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="container-fluid cta-section">
+        <div class="container position-relative" style="z-index:2">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center wow fadeInUp">
+                    <p class="label-gold mb-3">Partner With Us</p>
+                    <h2 class="display-5 text-white mb-4">Ready to Work Together?</h2>
+                    <p class="lead text-white-50 mb-5">Experience the Lekisa difference. Contact us today to discuss your industrial chemical requirements.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
+                        <a href="contact" class="btn btn-primary rounded-pill py-3 px-5">Get In Touch</a>
+                        <a href="tel:+254713506664" class="btn btn-outline-light rounded-pill py-3 px-5">Call Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Gallery End -->
 
-    <!-- Footer Start -->
+    <!-- Footer -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-xl-9">
-                    <div class="mb-5">
-                        <div class="row g-4">
-                            <div class="col-md-6 col-lg-6 col-xl-5">
-                                <div class="footer-item">
-                                    <a href="index" class="p-0">
-                                        <h3 class="text-white"><i class="fab fa-slack me-3"></i>Lekisa Trading Limited
-                                        </h3>
-                                        <!-- <img src="img/logo.png" alt="Logo"> -->
-                                    </a>
-                                    <p class="text-white mb-4">Your trusted partner in delivering top -tier industrial
-                                        chemicals </p>
-                                    <div class="footer-btn d-flex">
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-instagram"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-0" href="#"><i
-                                                class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6 col-xl-3">
-                                <div class="footer-item">
-                                    <h4 class="text-white mb-4">Useful Links</h4>
-                                    <a href="about"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                                    <a href="service"><i class="fas fa-angle-right me-2"></i> Services</a>
-                                    <a href="staff"><i class="fas fa-angle-right me-2"></i> Staff</a>
-                                    <a href="contact"><i class="fas fa-angle-right me-2"></i> Contact</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6 col-xl-4">
-                                <div class="footer-item">
-                                    <h4 class="mb-4 text-white">Instagram</h4>
-                                    <div class="row g-3">
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f1.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f1.jpg" data-lightbox="footerInstagram-1" -->
-                                                    <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f2.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f2.jpg" data-lightbox="footerInstagram-2" -->
-                                                    <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f3.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f3.jpg" data-lightbox="footerInstagram-3" -->
-                                                    <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f4.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f4.jpg" data-lightbox="footerInstagram-4" -->
-                                                    <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f5.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f5.jpg" data-lightbox="footerInstagram-5" -->
-                                                    <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f6.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f6.jpg" data-lightbox="footerInstagram-6" -->
-                                                    <!-- class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-item mb-4">
+                        <a href="home" class="p-0 mb-4 d-block text-decoration-none">
+                            <h3 class="text-white mb-0" style="font-family:'Syne',sans-serif;font-weight:800;letter-spacing:-0.02em">
+                                <span style="color:var(--ltl-gold)">L</span>TL
+                                <span style="font-size:.7em;font-weight:500;opacity:.7;letter-spacing:0"> Lekisa Trading</span>
+                            </h3>
+                        </a>
+                        <p class="text-white-50 mb-4">Your trusted partner in delivering top-tier industrial chemicals with commitment to quality and environmental responsibility.</p>
+                        <div class="footer-social d-flex gap-2">
+                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
-                        <div class="row g-0">
-                            <div class="col-12">
-                                <div class="row g-4">
-                                    <div class="col-lg-6 col-xl-4">
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                <i class="fas fa-map-marker-alt fa-2x"></i>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-white">Address</h4>
-                                                <p class="mb-0"> Donholm, Nairobi – KENYA</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-xl-4">
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                <i class="fas fa-envelope fa-2x"></i>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-white">Mail Us</h4>
-                                                <p class="mb-0">lekisatradingltd@gmail.com</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-xl-4">
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                <i class="fa fa-phone-alt fa-2x"></i>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-white">Telephone</h4>
-                                                <p class="mb-0">+254 741077018</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-item mb-4">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <a href="about" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>About Us</a>
+                        <a href="service" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Services</a>
+                        <a href="staff" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Our Team</a>
+                        <a href="gallery" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Gallery</a>
+                        <a href="contact" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item mb-4">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <div class="d-flex mb-3 gap-3">
+                            <div class="btn-square bg-primary rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h6 class="text-white mb-1" style="font-family:'Syne',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase">Address</h6>
+                                <p class="text-white-50 mb-0 small">Godown No.4, Off Outering Road<br>Donholm, Nairobi – KENYA</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3 gap-3">
+                            <div class="btn-square bg-primary rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h6 class="text-white mb-1" style="font-family:'Syne',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase">Email</h6>
+                                <a href="mailto:info@lekisatrading.co.ke" class="text-white-50 text-decoration-none small">info@lekisatrading.co.ke</a>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="btn-square bg-primary rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h6 class="text-white mb-1" style="font-family:'Syne',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase">Phone</h6>
+                                <a href="tel:+254713506664" class="text-white-50 text-decoration-none small d-block">+254 713 506 664</a>
+                                <a href="tel:+254741077018" class="text-white-50 text-decoration-none small d-block">+254 741 077 018</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-xl-3">
-                    <div class="footer-item">
-                        <h4 class="text-white mb-4">Newsletter</h4>
-                        <p class="text-white mb-3">Subscribe to Our Newsletter</p>
-                        <div class="position-relative rounded-pill mb-4">
-                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
-                                placeholder="Enter your email">
-                            <button type="button"
-                                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item mb-4">
+                        <h4 class="text-white mb-4">Location</h4>
+                        <div class="rounded-3 mb-4 overflow-hidden" style="border:1px solid rgba(201,168,76,0.15)">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d947.8562265141337!2d36.89229626954762!3d-1.3029259999177893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTgnMTAuNSJTIDM2wrA1MyczNC42IkU!5e1!3m2!1sen!2ske!4v1753177593126!5m2!1sen!2ske"
+                                width="100%" height="145" style="border:0;" allowfullscreen="" loading="lazy" title="Our Location"></iframe>
                         </div>
-                        <div class="d-flex flex-shrink-0">
-                            <div class="footer-btn">
-                                <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada"
-                                    data-wow-delay=".9s">
-                                    <i class="fa fa-phone-alt fa-2x"></i>
-                                    <div class="position-absolute" style="top: 2px; right: 12px;">
-                                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="d-flex flex-column ms-3 flex-shrink-0">
-                                <span>Call to Our Experts</span>
-                                <a href="tel:+254 713506664"><span class="text-white">+254 713506664</span></a>
-                            </div>
+                        <h4 class="text-white mb-3">Newsletter</h4>
+                        <p class="text-white-50 mb-3 small">Subscribe for product updates and industry news.</p>
+                        <div class="position-relative">
+                            <input class="form-control rounded-pill py-3 ps-4 pe-5" type="email" placeholder="Your email address">
+                            <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4" style="border-top:1px solid rgba(255,255,255,0.06)">
+                <div class="col-12 text-center">
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+                        <div class="btn-square bg-primary rounded-circle d-flex align-items-center justify-content-center"><i class="fa fa-phone-alt"></i></div>
+                        <div class="text-start">
+                            <span class="text-white-50 small" style="font-family:'Syne',sans-serif;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase">Call to Our Experts</span>
+                            <a href="tel:+254713506664" class="d-block text-white text-decoration-none" style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.1rem">+254 713 506 664</a>
                         </div>
                     </div>
                 </div>
@@ -512,28 +500,22 @@
         </div>
     </div>
 
-    <!-- Footer End -->
-
-    <!-- Copyright Start -->
+    <!-- Copyright -->
     <div class="container-fluid copyright py-4">
         <div class="container">
-            <div class="row g-4 align-items-center">
-                <div class="col-md-6 text-center text-md-end mb-md-0">
-                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
-                                class="fas fa-copyright text-light me-2"></i>Lekisa Trading Limited</a>, All right
-                        reserved.</span>
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-white-50">&copy; <a href="home">2026 Lekisa Trading Limited</a> — All rights reserved.</span>
                 </div>
-                <div class="col-md-6 text-center text-md-start text-body">
-                    Designed By <a class="border-bottom text-white" href="https://muli-samuel.onrender.com"
-                        target="_blank">Samuel Muli</a>
+                <div class="col-md-6 text-center text-md-end text-white-50">
+                    Designed by <a href="https://muli-samuel.onrender.com" target="_blank">Samuel Muli</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -544,33 +526,42 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
-    <!-- Gallery Filter Script -->
     <script>
-        $(document).ready(function () {
-            // Initialize lightbox
-            lightbox.option({
-                'resizeDuration': 200,
-                'wrapAround': true,
-                'showImageNumberLabel': true,
-                'alwaysShowNavOnTouchDevices': true
-            });
+        $(function () {
+            // Lightbox config
+            if (typeof lightbox !== 'undefined') {
+                lightbox.option({
+                    resizeDuration: 200,
+                    wrapAround: true,
+                    showImageNumberLabel: true,
+                    alwaysShowNavOnTouchDevices: true
+                });
+            }
 
-            // Filter functionality
-            $('.gallery-filter .btn').on('click', function () {
-                $('.gallery-filter .btn').removeClass('active').addClass('btn-outline-primary');
-                $(this).removeClass('btn-outline-primary').addClass('active');
+            // Gallery filter
+            $('.gallery-filters .filter-btn').on('click', function () {
+                var filter = $(this).data('filter');
 
-                const filter = $(this).attr('data-filter');
+                // Update active button
+                $('.gallery-filters .filter-btn').removeClass('active');
+                $(this).addClass('active');
 
                 if (filter === 'all') {
-                    $('.gallery-item').show();
+                    $('.gallery-grid [data-category]').closest('.col-lg-4').show();
                 } else {
-                    $('.gallery-item').hide();
-                    $(`.gallery-item[data-category="${filter}"]`).show();
+                    $('.gallery-grid [data-category]').closest('.col-lg-4').each(function () {
+                        var cat = $(this).find('[data-category]').length
+                            ? $(this).attr('data-category')
+                            : $(this).find('.gallery-item').data('category');
+                        // read from the col wrapper's data-category
+                        if ($(this).data('category') === filter) {
+                            $(this).show();
+                        } else {
+                            $(this).hide();
+                        }
+                    });
                 }
             });
         });
