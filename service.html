@@ -2,170 +2,228 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Lekisa Trading Limited - Services</title>
-    <meta content="Chemical Distributer, industrial chemical Distributer, industrial chemical seller" name="keywords" />
-    <meta content="A chemical distribution company" name="description" />
-    <meta name="author" content="Samuel Muli" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="theme-color" content="dark-blue" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8">
+    <title>Services — Lekisa Trading Limited</title>
+    <meta name="keywords" content="chemical engineering Kenya, industrial chemical services Nairobi, process engineering, project management">
+    <meta name="description" content="Explore Lekisa Trading Limited's comprehensive industrial chemical services — from chemical engineering and distribution to process design and project management.">
+    <meta name="author" content="Samuel Muli">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#0b1e3d">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
-        rel="stylesheet" />
+    <!-- Fonts: Syne + Lora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
+    <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
+    <!-- Libraries -->
     <link rel="stylesheet" href="lib/animate/animate.min.css" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap + Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-    
+    <link rel="icon" href="img/1.jpg">
+
     <style>
-        /* Additional custom styles for services page */
-        .service-value-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-left: 4px solid #0d6efd;
-            height: 100%;
-        }
-        
-        .service-value-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        
-        .service-icon {
-            font-size: 2.5rem;
-            color: #0d6efd;
-            margin-bottom: 1rem;
-        }
-        
-        .core-values-section {
-            background: linear-gradient(rgba(13, 110, 253, 0.05), rgba(13, 110, 253, 0.05)), url('img/pattern-bg.png');
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-        
+        /* ── Service page specifics ── */
+
+        /* Value pills */
         .value-pill {
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
+            font-family: 'Syne', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            background: var(--ltl-off-white);
+            border: 1px solid rgba(11,30,61,0.1);
             border-radius: 50px;
-            padding: 8px 20px;
-            margin: 5px;
+            padding: 0.4rem 1rem;
+            color: var(--ltl-navy);
             display: inline-block;
-            transition: all 0.3s ease;
+            margin: 0.25rem;
+            transition: var(--ease);
         }
-        
         .value-pill:hover {
-            background-color: #0d6efd;
-            color: white;
-            transform: scale(1.05);
+            background: var(--ltl-gold);
+            border-color: var(--ltl-gold);
+            color: var(--ltl-navy);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(201,168,76,0.25);
         }
-        
-        .service-feature-list {
-            list-style-type: none;
-            padding-left: 0;
+
+        /* Service detail card */
+        .service-detail-card {
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(11,30,61,0.07);
+            box-shadow: var(--shadow-sm);
+            transition: var(--ease);
+            height: 100%;
+            background: var(--ltl-white);
         }
-        
-        .service-feature-list li {
-            padding: 8px 0;
-            border-bottom: 1px dashed #dee2e6;
+        .service-detail-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(201,168,76,0.2);
         }
-        
-        .service-feature-list li:before {
-            content: "✓";
-            color: #0d6efd;
-            font-weight: bold;
-            margin-right: 10px;
+
+        /* Image container with badge */
+        .service-img-wrap {
+            position: relative;
+            overflow: hidden;
+            height: 220px;
         }
-        
-        .commitment-badge {
+        .service-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
+        }
+        .service-detail-card:hover .service-img-wrap img {
+            transform: scale(1.04);
+        }
+        .service-img-overlay {
             position: absolute;
-            top: -15px;
-            right: 20px;
-            background: #0d6efd;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: bold;
+            inset: 0;
+            background: linear-gradient(to top, rgba(11,30,61,0.6) 0%, transparent 60%);
+        }
+
+        /* Badge on image */
+        .service-badge {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            font-family: 'Syne', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.9rem;
+            border-radius: 50px;
+            background: var(--ltl-gold);
+            color: var(--ltl-navy);
+            z-index: 2;
+        }
+
+        /* Card body */
+        .service-detail-body {
+            padding: 1.75rem;
+        }
+        .service-detail-body h4 {
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            color: var(--ltl-navy);
+            margin-bottom: 0.75rem;
+        }
+        .service-detail-body p {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 0.92rem;
+            color: var(--ltl-text-light);
+            line-height: 1.8;
+        }
+
+        /* Feature list */
+        .service-feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.25rem 0 1.5rem;
+        }
+        .service-feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            padding: 0.45rem 0;
+            border-bottom: 1px solid rgba(11,30,61,0.06);
+            font-family: 'Lora', Georgia, serif;
+            font-size: 0.88rem;
+            color: var(--ltl-text);
+            line-height: 1.5;
+        }
+        .service-feature-list li:last-child { border-bottom: none; }
+        .service-feature-list li::before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            min-width: 18px;
+            border-radius: 50%;
+            background: var(--ltl-gold-pale);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 10'%3E%3Cpath d='M1 5l3 3 7-7' stroke='%23c9a84c' stroke-width='1.8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 10px;
         }
     </style>
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
-            <span class="sr-only">Loading...</span>
+
+    <!-- Spinner -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border" style="width:3rem;height:3rem;" role="status">
+            <span class="visually-hidden">Loading…</span>
         </div>
     </div>
-    <!-- Spinner End -->
 
-    <!-- Topbar Start -->
-    <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+    <!-- Topbar -->
+    <div class="container-fluid topbar px-0 px-lg-4 py-2 d-none d-lg-block">
         <div class="container">
             <div class="row gx-0 align-items-center">
-                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                    <div class="d-flex flex-wrap">
-                        <div class="ps-3">
-                            <a href="mailto:lekisatradingltd@gmail.com" class="text-muted small"><i
-                                    class="fas fa-envelope text-primary me-2"></i>lekisatradingltd@gmail.com</a>
-                        </div>
+                <div class="col-lg-8 text-center text-lg-start">
+                    <div class="d-flex flex-wrap gap-3 align-items-center">
+                        <a href="mailto:info@lekisatrading.co.ke" class="small d-flex align-items-center gap-2">
+                            <i class="fas fa-envelope" style="color:var(--ltl-gold)"></i>
+                            info@lekisatrading.co.ke
+                        </a>
+                        <span class="text-white-50" style="opacity:.3">|</span>
+                        <a href="tel:+254713506664" class="small d-flex align-items-center gap-2">
+                            <i class="fas fa-phone-alt" style="color:var(--ltl-gold)"></i>
+                            +254 713 506 664
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-flex justify-content-end">
-                        <div class="d-flex border-end border-primary pe-3">
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                <div class="col-lg-4 text-end">
+                    <div class="d-flex justify-content-end align-items-center gap-3">
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
 
-    <!-- Navbar & Hero Start -->
+    <!-- Navbar -->
     <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a href="#" class="navbar-brand p-0">
-                    <h1 class="text-primary mb-0">
-                        <i class="fab fa-slack me-2"></i> LTL
+                <a href="home" class="navbar-brand p-0">
+                    <h1 class="mb-0" style="font-family:'Syne',sans-serif;font-weight:800;letter-spacing:-0.03em;color:var(--ltl-navy)">
+                        <span style="color:var(--ltl-gold)">L</span>TL
                     </h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-0 mx-lg-auto">
-                        <a href="index" class="nav-item nav-link">Home</a>
+                    <div class="navbar-nav mx-auto">
+                        <a href="home" class="nav-item nav-link">Home</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">About</span>
-                            </a>
+                            <a href="#" class="nav-link dropdown-toggle">About</a>
                             <div class="dropdown-menu">
                                 <a href="about" class="dropdown-item">About Us</a>
-
                                 <a href="policy" class="dropdown-item">Our Policy</a>
                             </div>
                         </div>
@@ -175,506 +233,376 @@
                         <a href="contact" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
-                <div class="d-none d-xl-flex flex-shrink-0 ps-4">
-                    <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
-                        data-wow-delay=".9s">
-                        <i class="fa fa-phone-alt fa-2x"></i>
-                        <div class="position-absolute" style="top: 7px; right: 12px">
-                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                        </div>
+                <div class="d-none d-xl-flex align-items-center flex-shrink-0 ps-4 gap-3">
+                    <a href="tel:+254713506664" class="btn btn-lg-square rounded-circle" style="background:var(--ltl-gold-pale);color:var(--ltl-navy);">
+                        <i class="fa fa-phone-alt"></i>
                     </a>
-                    <div class="d-flex flex-column ms-3">
-                        <span>Call to Our Experts</span>
-                        <a href="tel:+254 713506664"><span class="text-dark">+254 713506664</span></a>
+                    <div class="d-flex flex-column">
+                        <span style="font-family:'Syne',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ltl-muted)">Call Our Experts</span>
+                        <a href="tel:+254713506664" style="font-family:'Syne',sans-serif;font-weight:700;color:var(--ltl-navy);text-decoration:none;">+254 713 506 664</a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-    <!-- Navbar & Hero End -->
 
-    <!-- Header Start -->
+    <!-- Breadcrumb -->
     <div class="container-fluid bg-breadcrumb">
-        <div class="container text-center py-5" style="max-width: 900px">
-            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">
-                Our Services
-            </h4>
+        <div class="container text-center py-5" style="max-width:800px">
+            <p class="label-gold mb-3 wow fadeInDown">What We Offer</p>
+            <h1 class="display-4 text-white mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Services</h1>
             <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                <li class="breadcrumb-item"><a href="index" class="text-white">Home</a></li>
-                <li class="breadcrumb-item active text-primary">Services</li>
+                <li class="breadcrumb-item"><a href="home">Home</a></li>
+                <li class="breadcrumb-item active">Services</li>
             </ol>
         </div>
     </div>
-    <!-- Header End -->
 
-    <!-- Mission & Values Start -->
-    <div class="container-fluid py-5">
+    <!-- Our Commitment intro -->
+    <div class="container-fluid py-5 bg-white">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative h-100">
-                        <img src="img/service-mission.jpg" class="img-fluid rounded" alt="Lekisa Mission">
-                    </div>
+                <div class="col-lg-6 wow fadeInLeft">
+                    <img src="img/service-mission.jpg" class="img-fluid rounded-3 shadow-sm" alt="Lekisa Trading — Our Commitment" style="border:1px solid rgba(11,30,61,0.07)">
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h4 class="text-primary mb-4">Our Commitment</h4>
-                    <h1 class="display-5 mb-4">Delivering Excellence Through Our Values</h1>
-                    <p class="mb-4">At Lekisa Trading Limited, our services are built upon a foundation of integrity, quality, and customer commitment. We strive to be your trusted partner in industrial chemical solutions.</p>
-                    
-                    <div class="d-flex flex-wrap mt-4">
+                <div class="col-lg-6 wow fadeInRight">
+                    <p class="label-gold mb-2">Our Commitment</p>
+                    <h2 class="display-5 mb-4">Delivering Excellence Through Our Values</h2>
+                    <p class="text-muted mb-4">At Lekisa Trading Limited, our services are built upon a foundation of integrity, quality, and customer commitment. We strive to be your trusted partner in industrial chemical solutions.</p>
+                    <p class="text-muted mb-5">Every service we deliver is guided by the same core principles that have made us a reliable name in the industry.</p>
+                    <div class="d-flex flex-wrap mb-5">
                         <span class="value-pill">Quality Assurance</span>
                         <span class="value-pill">Customer Commitment</span>
-                        <span class="value-pill">Integrity & Transparency</span>
+                        <span class="value-pill">Integrity &amp; Transparency</span>
                         <span class="value-pill">Accountability</span>
                         <span class="value-pill">Innovation</span>
                         <span class="value-pill">Environmental Responsibility</span>
                     </div>
-                    
-                    <div class="mt-4">
-                        <a href="about" class="btn btn-primary py-2 px-4 mt-3">Learn More About Us</a>
-                    </div>
+                    <a href="about" class="btn btn-primary rounded-pill py-3 px-5">Learn More About Us</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Mission & Values End -->
 
-    <!-- Service Start -->
-    <div class="container-fluid service py-5">
+    <!-- Service Cards -->
+    <div class="container-fluid py-5" style="background:var(--ltl-smoke)">
         <div class="container py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
-                <h4 class="text-primary">Our Specialized Services</h4>
-                <h1 class="display-4 mb-4">Comprehensive Engineering Solutions</h1>
-                <p class="mb-0">Leveraging our expertise to deliver top-tier industrial chemical services with a commitment to quality and sustainability.</p>
+            <div class="text-center mx-auto pb-5 wow fadeInUp" style="max-width:680px">
+                <p class="label-gold mb-2">Our Specialisations</p>
+                <h2 class="display-5 mb-3">Comprehensive Chemical Solutions</h2>
+                <p class="lead">Leveraging our expertise to deliver top-tier industrial chemical services with a commitment to quality and sustainability.</p>
             </div>
-            
+
             <div class="row g-4 justify-content-center">
-                <div class="col-md-12 col-lg-12 col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-item rounded shadow-sm">
-                        <div class="service-img position-relative">
-                            <img src="img/1.jpg" class="img-fluid rounded-top w-100" alt="Chemical Engineering" />
-                            <div class="commitment-badge">Quality Assured</div>
+
+                <!-- Chemical Engineering -->
+                <div class="col-md-6 col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-detail-card">
+                        <div class="service-img-wrap">
+                            <img src="img/1.jpg" alt="Chemical Engineering">
+                            <div class="service-img-overlay"></div>
+                            <span class="service-badge">Quality Assured</span>
                         </div>
-                        <div class="service-content p-4">
-                            <div class="service-content-inner">
-                                <h4 class="mb-3"><i class="fas fa-flask me-2 text-primary"></i>Chemical Engineering</h4>
-                                <p class="mb-4">
-                                    Our chemical engineering services deliver comprehensive solutions tailored to diverse industrial needs, with a strong emphasis on environmental responsibility and sustainable practices.
-                                </p>
-                                
-                                <ul class="service-feature-list">
-                                    <li>Process design and optimization for enhanced efficiency</li>
-                                    <li>Chemical plant design adhering to industry standards</li>
-                                    <li>Environmental engineering with sustainable practices</li>
-                                    <li>Waste management and treatment solutions</li>
-                                    <li>Safety assessments and hazard analyses</li>
-                                    <li>Research and development for innovation</li>
-                                    <li>Expert consultancy and technical evaluations</li>
-                                    <li>Rigorous quality control measures</li>
-                                    <li>Training programs and ongoing technical support</li>
-                                </ul>
-                                
-                                <div class="mt-4">
-                                    <a href="contact" class="btn btn-outline-primary py-2 px-4">Inquire About This Service</a>
-                                </div>
-                            </div>
+                        <div class="service-detail-body">
+                            <h4><i class="fas fa-flask me-2" style="color:var(--ltl-gold)"></i>Chemical Engineering</h4>
+                            <p>Our chemical engineering services deliver comprehensive solutions tailored to diverse industrial needs, with a strong emphasis on environmental responsibility and sustainable practices.</p>
+                            <ul class="service-feature-list">
+                                <li>Process design and optimization for enhanced efficiency</li>
+                                <li>Chemical plant design adhering to industry standards</li>
+                                <li>Environmental engineering with sustainable practices</li>
+                                <li>Waste management and treatment solutions</li>
+                                <li>Safety assessments and hazard analyses</li>
+                                <li>Research and development for innovation</li>
+                                <li>Expert consultancy and technical evaluations</li>
+                                <li>Rigorous quality control measures</li>
+                                <li>Training programs and ongoing technical support</li>
+                            </ul>
+                            <a href="contact" class="btn btn-outline-primary rounded-pill py-2 px-4">Enquire About This Service</a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-md-12 col-lg-12 col-xl-6 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-item rounded shadow-sm">
-                        <div class="service-img position-relative">
-                            <img src="img/2.jpeg" class="img-fluid rounded-top w-100" alt="Mechanical Engineering" />
-                            <div class="commitment-badge">Innovation Focused</div>
+
+                <!-- Mechanical Engineering -->
+                <div class="col-md-6 col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-detail-card">
+                        <div class="service-img-wrap">
+                            <img src="img/2.jpeg" alt="Mechanical Engineering">
+                            <div class="service-img-overlay"></div>
+                            <span class="service-badge">Innovation Focused</span>
                         </div>
-                        <div class="service-content p-4">
-                            <div class="service-content-inner">
-                                <h4 class="mb-3"><i class="fas fa-cogs me-2 text-primary"></i>Mechanical Engineering and Design</h4>
-                                <p class="mb-4">
-                                    We deliver robust mechanical engineering solutions with innovative designs that prioritize efficiency, reliability, and environmental sustainability.
-                                </p>
-                                
-                                <ul class="service-feature-list">
-                                    <li>Innovative machinery and equipment design</li>
-                                    <li>Detailed technical drawings and 3D modeling</li>
-                                    <li>Prototype development and testing</li>
-                                    <li>Manufacturing process optimization</li>
-                                    <li>Eco-friendly design practices</li>
-                                    <li>Comprehensive safety and reliability assessments</li>
-                                    <li>Advanced mechanical technology development</li>
-                                    <li>Expert consultancy from concept to implementation</li>
-                                    <li>Stringent testing and validation processes</li>
-                                    <li>Training programs for equipment operation and maintenance</li>
-                                </ul>
-                                
-                                <div class="mt-4">
-                                    <a href="contact" class="btn btn-outline-primary py-2 px-4">Inquire About This Service</a>
-                                </div>
-                            </div>
+                        <div class="service-detail-body">
+                            <h4><i class="fas fa-cogs me-2" style="color:var(--ltl-gold)"></i>Mechanical Engineering &amp; Design</h4>
+                            <p>We deliver robust mechanical engineering solutions with innovative designs that prioritize efficiency, reliability, and environmental sustainability.</p>
+                            <ul class="service-feature-list">
+                                <li>Innovative machinery and equipment design</li>
+                                <li>Detailed technical drawings and 3D modeling</li>
+                                <li>Prototype development and testing</li>
+                                <li>Manufacturing process optimization</li>
+                                <li>Eco-friendly design practices</li>
+                                <li>Comprehensive safety and reliability assessments</li>
+                                <li>Advanced mechanical technology development</li>
+                                <li>Expert consultancy from concept to implementation</li>
+                                <li>Stringent testing and validation processes</li>
+                            </ul>
+                            <a href="contact" class="btn btn-outline-primary rounded-pill py-2 px-4">Enquire About This Service</a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-md-12 col-lg-12 col-xl-6 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="service-item rounded shadow-sm">
-                        <div class="service-img position-relative">
-                            <img src="img/3.jpeg" class="img-fluid rounded-top w-100" alt="Process Engineering" />
-                            <div class="commitment-badge">Efficiency Driven</div>
+
+                <!-- Process Engineering -->
+                <div class="col-md-6 col-xl-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-detail-card">
+                        <div class="service-img-wrap">
+                            <img src="img/3.jpeg" alt="Process Engineering">
+                            <div class="service-img-overlay"></div>
+                            <span class="service-badge">Efficiency Driven</span>
                         </div>
-                        <div class="service-content p-4">
-                            <div class="service-content-inner">
-                                <h4 class="mb-3"><i class="fas fa-project-diagram me-2 text-primary"></i>Process Engineering and Design</h4>
-                                <p class="mb-4">
-                                    Our process engineering services optimize industrial operations through innovative techniques and advanced technologies, ensuring higher performance and sustainability.
-                                </p>
-                                
-                                <ul class="service-feature-list">
-                                    <li>Industrial process development and refinement</li>
-                                    <li>State-of-the-art facility design</li>
-                                    <li>Process optimization for maximum productivity</li>
-                                    <li>Advanced technology integration</li>
-                                    <li>Comprehensive safety assessments</li>
-                                    <li>Environmental compliance and emissions control</li>
-                                    <li>Waste management solutions</li>
-                                    <li>Rigorous quality testing and monitoring</li>
-                                    <li>Project planning and feasibility studies</li>
-                                    <li>Personnel training and skill enhancement</li>
-                                </ul>
-                                
-                                <div class="mt-4">
-                                    <a href="contact" class="btn btn-outline-primary py-2 px-4">Inquire About This Service</a>
-                                </div>
-                            </div>
+                        <div class="service-detail-body">
+                            <h4><i class="fas fa-project-diagram me-2" style="color:var(--ltl-gold)"></i>Process Engineering &amp; Design</h4>
+                            <p>Our process engineering services optimize industrial operations through innovative techniques and advanced technologies, ensuring higher performance and sustainability.</p>
+                            <ul class="service-feature-list">
+                                <li>Industrial process development and refinement</li>
+                                <li>State-of-the-art facility design</li>
+                                <li>Process optimization for maximum productivity</li>
+                                <li>Advanced technology integration</li>
+                                <li>Comprehensive safety assessments</li>
+                                <li>Environmental compliance and emissions control</li>
+                                <li>Waste management solutions</li>
+                                <li>Rigorous quality testing and monitoring</li>
+                                <li>Project planning and feasibility studies</li>
+                            </ul>
+                            <a href="contact" class="btn btn-outline-primary rounded-pill py-2 px-4">Enquire About This Service</a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-md-12 col-lg-12 col-xl-6 wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="service-item rounded shadow-sm">
-                        <div class="service-img position-relative">
-                            <img src="img/4.jpg" class="img-fluid rounded-top w-100" alt="Project Management" />
-                            <div class="commitment-badge">Results Guaranteed</div>
+
+                <!-- Project Management -->
+                <div class="col-md-6 col-xl-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-detail-card">
+                        <div class="service-img-wrap">
+                            <img src="img/4.jpg" alt="Project Management">
+                            <div class="service-img-overlay"></div>
+                            <span class="service-badge">Results Guaranteed</span>
                         </div>
-                        <div class="service-content p-4">
-                            <div class="service-content-inner">
-                                <h4 class="mb-3"><i class="fas fa-tasks me-2 text-primary"></i>Project Management</h4>
-                                <p class="mb-4">
-                                    We guide clients through every project phase with meticulous planning and execution, ensuring successful outcomes that align with objectives and timelines.
-                                </p>
-                                
-                                <ul class="service-feature-list">
-                                    <li>Comprehensive project planning and scoping</li>
-                                    <li>Detailed objective and deliverable definition</li>
-                                    <li>Budget and timeline management</li>
-                                    <li>Resource coordination and allocation</li>
-                                    <li>Stakeholder communication management</li>
-                                    <li>Progress monitoring and issue identification</li>
-                                    <li>Corrective action implementation</li>
-                                    <li>Quality assurance protocols</li>
-                                    <li>Risk assessment and mitigation</li>
-                                    <li>Project closure and evaluation</li>
-                                </ul>
-                                
-                                <div class="mt-4">
-                                    <a href="contact" class="btn btn-outline-primary py-2 px-4">Inquire About This Service</a>
-                                </div>
-                            </div>
+                        <div class="service-detail-body">
+                            <h4><i class="fas fa-tasks me-2" style="color:var(--ltl-gold)"></i>Project Management</h4>
+                            <p>We guide clients through every project phase with meticulous planning and execution, ensuring successful outcomes that align with objectives and timelines.</p>
+                            <ul class="service-feature-list">
+                                <li>Comprehensive project planning and scoping</li>
+                                <li>Detailed objective and deliverable definition</li>
+                                <li>Budget and timeline management</li>
+                                <li>Resource coordination and allocation</li>
+                                <li>Stakeholder communication management</li>
+                                <li>Progress monitoring and issue identification</li>
+                                <li>Corrective action implementation</li>
+                                <li>Quality assurance protocols</li>
+                                <li>Risk assessment and mitigation</li>
+                            </ul>
+                            <a href="contact" class="btn btn-outline-primary rounded-pill py-2 px-4">Enquire About This Service</a>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-    <!-- Service End -->
 
-   <!--   Why Choose Us Start 
-    <div class="container-fluid core-values-section py-5">
+    <!-- Why Choose Us strip -->
+    <div class="container-fluid py-5 bg-white">
         <div class="container py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px">
-                <h4 class="text-primary">Why Choose Lekisa</h4>
-                <h1 class="display-4 mb-4">Excellence in Chemical Solutions</h1>
+            <div class="text-center mx-auto pb-5 wow fadeInUp" style="max-width:680px">
+                <p class="label-gold mb-2">The Lekisa Advantage</p>
+                <h2 class="display-5 mb-3">Why Choose Us</h2>
+                <p class="lead">In the complex business of chemicals, our company embodies excellence in supplying and distributing chemical solutions.</p>
             </div>
-            
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card value-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="value-icon"><i class="fas fa-award"></i></div>
+                            <h5 class="mb-2" style="font-family:'Syne',sans-serif;font-weight:700">Quality Assurance</h5>
+                            <p class="text-muted small">We guarantee reliable provision of high quality chemicals that align with industry benchmarks and customer requirements.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="card service-value-card h-100 border-0 shadow-sm">
+                    <div class="card value-card h-100">
                         <div class="card-body p-4 text-center">
-                            <div class="service-icon">
-                                <i class="fas fa-award"></i>
-                            </div>
-                            <h5 class="card-title mb-3">Quality Assurance</h5>
-                            <p class="card-text">We guarantee reliable provision of high quality chemicals that align with industry benchmarks and customer requirements.</p>
+                            <div class="value-icon"><i class="fas fa-users"></i></div>
+                            <h5 class="mb-2" style="font-family:'Syne',sans-serif;font-weight:700">Customer Commitment</h5>
+                            <p class="text-muted small">We put customer needs first by offering responsive services, dependable supply, and customized solutions.</p>
                         </div>
                     </div>
                 </div>
-                
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="card service-value-card h-100 border-0 shadow-sm">
+                    <div class="card value-card h-100">
                         <div class="card-body p-4 text-center">
-                            <div class="service-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <h5 class="card-title mb-3">Customer Commitment</h5>
-                            <p class="card-text">We put customer needs first by offering responsive services, dependable supply and customized solutions.</p>
+                            <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                            <h5 class="mb-2" style="font-family:'Syne',sans-serif;font-weight:700">Integrity &amp; Transparency</h5>
+                            <p class="text-muted small">We deploy unmatched commitment to ethical standards in all our dealings, ensuring trust and accountability.</p>
                         </div>
                     </div>
                 </div>
-                
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="card service-value-card h-100 border-0 shadow-sm">
+                    <div class="card value-card h-100">
                         <div class="card-body p-4 text-center">
-                            <div class="service-icon">
-                                <i class="fas fa-handshake"></i>
-                            </div>
-                            <h5 class="card-title mb-3">Integrity & Transparency</h5>
-                            <p class="card-text">We deploy unmatched commitment to ethical standards in all our dealings, ensuring trust and accountability.</p>
+                            <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                            <h5 class="mb-2" style="font-family:'Syne',sans-serif;font-weight:700">Innovation</h5>
+                            <p class="text-muted small">We go beyond obvious solutions and business trends, continuously improving our services and products.</p>
                         </div>
                     </div>
                 </div>
-                
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="card service-value-card h-100 border-0 shadow-sm">
+                    <div class="card value-card h-100">
                         <div class="card-body p-4 text-center">
-                            <div class="service-icon">
-                                <i class="fas fa-lightbulb"></i>
-                            </div>
-                            <h5 class="card-title mb-3">Innovation</h5>
-                            <p class="card-text">We go beyond obvious solutions and business trends, continuously improving our services and products.</p>
+                            <div class="value-icon"><i class="fas fa-leaf"></i></div>
+                            <h5 class="mb-2" style="font-family:'Syne',sans-serif;font-weight:700">Environmental Responsibility</h5>
+                            <p class="text-muted small">We promote sustainable practices and comply with regulatory standards to reduce environmental footprint.</p>
                         </div>
                     </div>
                 </div>
-                
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="card service-value-card h-100 border-0 shadow-sm">
+                    <div class="card value-card h-100">
                         <div class="card-body p-4 text-center">
-                            <div class="service-icon">
-                                <i class="fas fa-leaf"></i>
-                            </div>
-                            <h5 class="card-title mb-3">Environmental Responsibility</h5>
-                            <p class="card-text">We promote sustainable practices and comply with regulatory standards to reduce environmental footprint.</p>
+                            <div class="value-icon"><i class="fas fa-check-double"></i></div>
+                            <h5 class="mb-2" style="font-family:'Syne',sans-serif;font-weight:700">Accountability</h5>
+                            <p class="text-muted small">We steadfastly uphold our commitments and are responsible for what we do, ensuring client satisfaction.</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="card service-value-card h-100 border-0 shadow-sm">
-                        <div class="card-body p-4 text-center">
-                            <div class="service-icon">
-                                <i class="fas fa-check-double"></i>
-                            </div>
-                            <h5 class="card-title mb-3">Accountability</h5>
-                            <p class="card-text">We steadfastly uphold our commitments and are responsible for what we do, ensuring client satisfaction.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.8s">
-                <a href="contact" class="btn btn-primary py-3 px-5">Get In Touch With Our Experts</a>
             </div>
         </div>
     </div>
-    Why Choose Us End  -->
 
-    <!-- Footer Start -->
+    <!-- CTA -->
+    <div class="container-fluid cta-section">
+        <div class="container position-relative" style="z-index:2">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center wow fadeInUp">
+                    <p class="label-gold mb-3">Ready to Get Started?</p>
+                    <h2 class="display-5 text-white mb-4">Speak With Our Experts</h2>
+                    <p class="lead text-white-50 mb-5">Contact us today to discuss your industrial chemical requirements and how we can tailor our services to your needs.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
+                        <a href="contact" class="btn btn-primary rounded-pill py-3 px-5">Get In Touch</a>
+                        <a href="tel:+254713506664" class="btn btn-outline-light rounded-pill py-3 px-5">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-xl-9">
-                    <div class="mb-5">
-                        <div class="row g-4">
-                            <div class="col-md-6 col-lg-6 col-xl-5">
-                                <div class="footer-item">
-                                    <a href="index" class="p-0">
-                                        <h3 class="text-white">
-                                            <i class="fab fa-slack me-3"></i>Lekisa Trading Limited
-                                        </h3>
-                                        <!-- <img src="img/logo.png" alt="Logo"> -->
-                                    </a>
-                                    <p class="text-white mb-4">
-                                        Your trusted partner in delivering top -tier industrial
-                                        chemicals
-                                    </p>
-                                    <div class="footer-btn d-flex">
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-instagram"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-0" href="#"><i
-                                                class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6 col-xl-3">
-                                <div class="footer-item">
-                                    <h4 class="text-white mb-4">Useful Links</h4>
-                                    <a href="about"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                                    <a href="service"><i class="fas fa-angle-right me-2"></i> Services</a>
-                                    <a href="staff"><i class="fas fa-angle-right me-2"></i> Staff</a>
-                                    <a href="contact"><i class="fas fa-angle-right me-2"></i> Contact</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6 col-xl-4">
-                                <div class="footer-item">
-                                    <h4 class="mb-4 text-white">Instagram</h4>
-                                    <div class="row g-3">
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f1.jpg" class="img-fluid w-100" alt="" />
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f1.jpg" data-lightbox="footerInstagram-1" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f2.jpg" class="img-fluid w-100" alt="" />
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f2.jpg" data-lightbox="footerInstagram-2" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f3.jpg" class="img-fluid w-100" alt="" />
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f3.jpg" data-lightbox="footerInstagram-3" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f4.jpg" class="img-fluid w-100" alt="" />
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f4.jpg" data-lightbox="footerInstagram-4" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f5.jpg" class="img-fluid w-100" alt="" />
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f5.jpg" data-lightbox="footerInstagram-5" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/f6.jpg" class="img-fluid w-100" alt="" />
-                                                <div class="footer-search-icon">
-                                                    <!-- <a href="img/f6.jpg" data-lightbox="footerInstagram-6" class="my-auto"><i class="fas fa-link text-white"></i></a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-item mb-4">
+                        <a href="home" class="p-0 mb-4 d-block text-decoration-none">
+                            <h3 class="text-white mb-0" style="font-family:'Syne',sans-serif;font-weight:800;letter-spacing:-0.02em">
+                                <span style="color:var(--ltl-gold)">L</span>TL
+                                <span style="font-size:.7em;font-weight:500;opacity:.7;letter-spacing:0"> Lekisa Trading</span>
+                            </h3>
+                        </a>
+                        <p class="text-white-50 mb-4">Your trusted partner in delivering top-tier industrial chemicals with commitment to quality and environmental responsibility.</p>
+                        <div class="footer-social d-flex gap-2">
+                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08)">
-                        <div class="row g-0">
-                            <div class="col-12">
-                                <div class="row g-4">
-                                    <div class="col-lg-6 col-xl-4">
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                <i class="fas fa-map-marker-alt fa-2x"></i>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-white">Address</h4>
-                                                <p class="mb-0">Donholm, Nairobi – KENYA</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-xl-4">
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                <i class="fas fa-envelope fa-2x"></i>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-white">Mail Us</h4>
-                                                <p class="mb-0">
-                                                    <a href="mailto:lekisatradingltd@gmail.com"
-                                                        class="text-white">lekisatradingltd@gmail.com</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-xl-4">
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                <i class="fa fa-phone-alt fa-2x"></i>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-white">Telephone</h4>
-                                                <p class="mb-0">+254 713506664<br />+254 741077018</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-item mb-4">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <a href="about" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>About Us</a>
+                        <a href="service" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Services</a>
+                        <a href="staff" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Our Team</a>
+                        <a href="gallery" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Gallery</a>
+                        <a href="contact" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item mb-4">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <div class="d-flex mb-3 gap-3">
+                            <div class="btn-square bg-primary rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1" style="font-family:'Syne',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase">Address</h6>
+                                <p class="text-white-50 mb-0 small">Godown No.4, Off Outering Road<br>Donholm, Nairobi – KENYA</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3 gap-3">
+                            <div class="btn-square bg-primary rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1" style="font-family:'Syne',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase">Email</h6>
+                                <a href="mailto:info@lekisatrading.co.ke" class="text-white-50 text-decoration-none small">info@lekisatrading.co.ke</a>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="btn-square bg-primary rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1" style="font-family:'Syne',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase">Phone</h6>
+                                <a href="tel:+254713506664" class="text-white-50 text-decoration-none small d-block">+254 713 506 664</a>
+                                <a href="tel:+254741077018" class="text-white-50 text-decoration-none small d-block">+254 741 077 018</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-xl-3">
-                    <div class="footer-item">
-                        <h4 class="text-white mb-4">Newsletter</h4>
-                        <p class="text-white mb-3">Subscribe to Our Newsletter</p>
-                        <div class="position-relative rounded-pill mb-4">
-                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
-                                placeholder="Enter your email" />
-                            <button type="button"
-                                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">
-                                SignUp
-                            </button>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item mb-4">
+                        <h4 class="text-white mb-4">Location</h4>
+                        <div class="rounded-3 mb-4 overflow-hidden" style="border:1px solid rgba(201,168,76,0.15)">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d947.8562265141337!2d36.89229626954762!3d-1.3029259999177893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTgnMTAuNSJTIDM2wrA1MyczNC42IkU!5e1!3m2!1sen!2ske!4v1753177593126!5m2!1sen!2ske"
+                                width="100%" height="145" style="border:0;" allowfullscreen="" loading="lazy" title="Our Location"></iframe>
                         </div>
-                        <div class="d-flex flex-shrink-0">
-                            <div class="footer-btn">
-                                <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada"
-                                    data-wow-delay=".9s">
-                                    <i class="fa fa-phone-alt fa-2x"></i>
-                                    <div class="position-absolute" style="top: 2px; right: 12px">
-                                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="d-flex flex-column ms-3 flex-shrink-0">
-                                <span>Call to Our Experts</span>
-                                <a href="tel:+254 713506664"><span class="text-white">+254 713506664</span></a>
-                            </div>
+                        <h4 class="text-white mb-3">Newsletter</h4>
+                        <p class="text-white-50 mb-3 small">Subscribe for product updates and industry news.</p>
+                        <div class="position-relative">
+                            <input class="form-control rounded-pill py-3 ps-4 pe-5" type="email" placeholder="Your email address">
+                            <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4" style="border-top:1px solid rgba(255,255,255,0.06)">
+                <div class="col-12 text-center">
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+                        <div class="btn-square bg-primary rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fa fa-phone-alt"></i>
+                        </div>
+                        <div class="text-start">
+                            <span class="text-white-50 small" style="font-family:'Syne',sans-serif;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase">Call to Our Experts</span>
+                            <a href="tel:+254713506664" class="d-block text-white text-decoration-none" style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.1rem">+254 713 506 664</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
 
-    <!-- Copyright Start -->
+    <!-- Copyright -->
     <div class="container-fluid copyright py-4">
         <div class="container">
-            <div class="row g-4 align-items-center">
-                <div class="col-md-6 text-center text-md-end mb-md-0">
-                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
-                                class="fas fa-copyright text-light me-2"></i>Lekisa Trading
-                            Ltd</a>, All right reserved.</span>
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-white-50">&copy; <a href="home">2026 Lekisa Trading Limited</a> — All rights reserved.</span>
                 </div>
-                <div class="col-md-6 text-center text-md-start text-body">
-                    Designed By
-                    <a class="border-bottom text-white" href="https://muli-samuel.onrender.com" target="_blank">Samuel
-                        Muli</a>
+                <div class="col-md-6 text-center text-md-end text-white-50">
+                    Designed by <a href="https://muli-samuel.onrender.com" target="_blank">Samuel Muli</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -683,52 +611,9 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="js/main.js"></script>
-    
-    <script>
-        // Additional JavaScript for enhanced interactivity
-        document.addEventListener('DOMContentLoaded', function() {
-            // Animate value pills on scroll
-            const valuePills = document.querySelectorAll('.value-pill');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = 1;
-                        entry.target.style.transform = 'scale(1)';
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            valuePills.forEach(pill => {
-                pill.style.opacity = 0;
-                pill.style.transform = 'scale(0.8)';
-                pill.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-                observer.observe(pill);
-            });
-            
-            // Add smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>

@@ -2,188 +2,255 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Policy & Compliance - Lekisa Trading Limited</title>
-    <meta content="Chemical Distributer, industrial chemical Distributer, industrial chemical seller" name="keywords" />
-    <meta
-        content="Lekisa Trading Limited's policy and compliance statement for quality, safety, and environmental responsibility"
-        name="description" />
-    <meta name="author" content="Samuel Muli" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="theme-color" content="#0d6efd" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8">
+    <title>Policy &amp; Compliance — Lekisa Trading Limited</title>
+    <meta name="keywords" content="Lekisa Trading policy, chemical compliance Kenya, quality safety environment">
+    <meta name="description" content="Lekisa Trading Limited's commitment to quality, safety, environmental responsibility and regulatory compliance.">
+    <meta name="author" content="Samuel Muli">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#0b1e3d">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
-        rel="stylesheet" />
+    <!-- Fonts: Syne + Lora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
+    <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
+    <!-- Libraries -->
     <link rel="stylesheet" href="lib/animate/animate.min.css" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap + Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="img/1.jpg">
 
     <style>
-        /* Custom Styles for Policy Page */
-        .policy-header {
-            background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.9)), url('img/policy-banner.jpg') center/cover no-repeat;
-            padding: 6rem 0;
-            color: white;
-        }
+        /* ── Policy page specifics ── */
 
+        /* CEO quote block */
         .policy-statement {
-            background-color: #f8f9fa;
-            border-left: 5px solid #0d6efd;
-            padding: 2.5rem;
-            margin: 3rem 0;
-            border-radius: 0 8px 8px 0;
+            background: var(--ltl-off-white);
+            border-left: 4px solid var(--ltl-gold);
+            border-radius: 0 14px 14px 0;
+            padding: 2.5rem 3rem;
+            position: relative;
+            overflow: hidden;
         }
+        .policy-statement::before {
+            content: '\201C';
+            font-family: 'Lora', Georgia, serif;
+            font-size: 8rem;
+            line-height: 1;
+            color: var(--ltl-gold);
+            opacity: 0.15;
+            position: absolute;
+            top: -1rem;
+            left: 1.5rem;
+            pointer-events: none;
+        }
+        .policy-statement blockquote p {
+            font-family: 'Lora', Georgia, serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--ltl-text-light);
+            position: relative;
+            z-index: 1;
+        }
+        .policy-statement .blockquote-footer {
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            font-size: 0.82rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--ltl-navy);
+            position: relative;
+            z-index: 1;
+        }
+        .policy-statement .blockquote-footer::before { color: var(--ltl-gold); }
 
+        /* Commitment item cards */
         .policy-item {
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            border-radius: 8px;
-            background-color: white;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+            padding: 1.75rem;
+            border-radius: 14px;
+            background: var(--ltl-white);
+            border: 1px solid rgba(11,30,61,0.07);
+            box-shadow: var(--shadow-sm);
+            transition: var(--ease);
+            height: 100%;
         }
-
         .policy-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+            box-shadow: var(--shadow-md);
+            border-color: rgba(201,168,76,0.3);
         }
-
         .policy-icon {
-            width: 60px;
-            height: 60px;
+            width: 56px;
+            height: 56px;
+            min-width: 56px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            margin-right: 1.5rem;
-            background-color: rgba(13, 110, 253, 0.1);
-            color: #0d6efd;
-            font-size: 1.5rem;
-            flex-shrink: 0;
+            background: var(--ltl-gold-pale);
+            color: var(--ltl-gold);
+            font-size: 1.3rem;
+            transition: var(--ease);
+        }
+        .policy-item:hover .policy-icon {
+            background: var(--ltl-navy);
+            color: var(--ltl-gold);
+        }
+        .policy-item h5 {
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--ltl-navy);
+            margin-bottom: 0.4rem;
+        }
+        .policy-item p {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 0.9rem;
+            color: var(--ltl-text-light);
+            margin: 0;
+            line-height: 1.7;
         }
 
+        /* Ongoing commitment section */
         .commitment-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/commitment-bg.jpg') center/cover fixed no-repeat;
-            color: white;
-            padding: 5rem 0;
+            background:
+                linear-gradient(135deg, rgba(11,30,61,0.96) 0%, rgba(19,41,82,0.92) 100%),
+                url('img/commitment-bg.jpg') center/cover fixed no-repeat;
+            position: relative;
+            overflow: hidden;
         }
-
-        .commitment-item {
+        .commitment-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 50% 50%, rgba(201,168,76,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .commitment-card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(201,168,76,0.18);
+            border-radius: 14px;
+            padding: 2.5rem 1.75rem;
             text-align: center;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            background-color: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s ease;
+            backdrop-filter: blur(8px);
+            transition: var(--ease);
+            height: 100%;
         }
-
-        .commitment-item:hover {
+        .commitment-card:hover {
+            background: rgba(201,168,76,0.12);
+            border-color: rgba(201,168,76,0.4);
             transform: translateY(-5px);
-            background-color: rgba(13, 110, 253, 0.3);
+        }
+        .commitment-card-icon {
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            background: rgba(201,168,76,0.15);
+            border: 2px solid rgba(201,168,76,0.35);
+            color: var(--ltl-gold);
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            transition: var(--ease);
+        }
+        .commitment-card:hover .commitment-card-icon {
+            background: var(--ltl-gold);
+            color: var(--ltl-navy);
+        }
+        .commitment-card h4 {
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            color: var(--ltl-white);
+            margin-bottom: 0.75rem;
+        }
+        .commitment-card p {
+            font-family: 'Lora', Georgia, serif;
+            color: rgba(255,255,255,0.65);
+            font-size: 0.92rem;
+            margin: 0;
+            line-height: 1.75;
         }
 
-        .commitment-icon {
-            font-size: 2.5rem;
-            color: #0d6efd;
-            margin-bottom: 1rem;
-        }
-
-        @media (max-width: 768px) {
-            .policy-header {
-                padding: 4rem 0;
-            }
-
-            .policy-statement {
-                padding: 1.5rem;
-            }
-
-            .policy-item {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .policy-icon {
-                margin-right: 0;
-                margin-bottom: 1rem;
-            }
+        /* Responsive policy items */
+        @media (max-width: 576px) {
+            .policy-item { flex-direction: column; }
+            .policy-statement { padding: 2rem 1.5rem; }
         }
     </style>
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
-            <span class="sr-only">Loading...</span>
+
+    <!-- Spinner -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border" style="width:3rem;height:3rem;" role="status">
+            <span class="visually-hidden">Loading…</span>
         </div>
     </div>
-    <!-- Spinner End -->
 
-    <!-- Topbar Start -->
-    <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+    <!-- Topbar -->
+    <div class="container-fluid topbar px-0 px-lg-4 py-2 d-none d-lg-block">
         <div class="container">
             <div class="row gx-0 align-items-center">
-                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                    <div class="d-flex flex-wrap">
-                        <div class="ps-3">
-                            <a href="mailto:lekisatradingltd@gmail.com" class="text-muted small"><i
-                                    class="fas fa-envelope text-primary me-2"></i>lekisatradingltd@gmail.com</a>
-                        </div>
+                <div class="col-lg-8 text-center text-lg-start">
+                    <div class="d-flex flex-wrap gap-3 align-items-center">
+                        <a href="mailto:info@lekisatrading.co.ke" class="small d-flex align-items-center gap-2">
+                            <i class="fas fa-envelope" style="color:var(--ltl-gold)"></i>
+                            info@lekisatrading.co.ke
+                        </a>
+                        <span class="text-white-50" style="opacity:.3">|</span>
+                        <a href="tel:+254713506664" class="small d-flex align-items-center gap-2">
+                            <i class="fas fa-phone-alt" style="color:var(--ltl-gold)"></i>
+                            +254 713 506 664
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-flex justify-content-end">
-                        <div class="d-flex border-end border-primary pe-3">
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                <div class="col-lg-4 text-end">
+                    <div class="d-flex justify-content-end align-items-center gap-3">
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn p-0 text-primary" href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
 
-    <!-- Navbar & Hero Start -->
+    <!-- Navbar -->
     <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a href="index" class="navbar-brand p-0">
-                    <h1 class="text-primary mb-0">
-                        <i class="fab fa-slack me-2"></i> LTL
+                <a href="home" class="navbar-brand p-0">
+                    <h1 class="mb-0" style="font-family:'Syne',sans-serif;font-weight:800;letter-spacing:-0.03em;color:var(--ltl-navy)">
+                        <span style="color:var(--ltl-gold)">L</span>TL
                     </h1>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-0 mx-lg-auto">
-                        <a href="index" class="nav-item nav-link">Home</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link active" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">About</span>
-                            </a>
+                    <div class="navbar-nav mx-auto">
+                        <a href="home" class="nav-item nav-link">Home</a>
+                        <div class="nav-item dropdown active">
+                            <a href="#" class="nav-link dropdown-toggle active">About</a>
                             <div class="dropdown-menu">
                                 <a href="about" class="dropdown-item">About Us</a>
                                 <a href="policy" class="dropdown-item active">Our Policy</a>
@@ -195,386 +262,313 @@
                         <a href="contact" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
-                <div class="d-none d-xl-flex flex-shrink-0 ps-4">
-                    <a href="tel:+254713506664"
-                        class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
-                        data-wow-delay=".9s">
-                        <i class="fa fa-phone-alt fa-2x"></i>
-                        <div class="position-absolute" style="top: 7px; right: 12px">
-                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                        </div>
+                <div class="d-none d-xl-flex align-items-center flex-shrink-0 ps-4 gap-3">
+                    <a href="tel:+254713506664" class="btn btn-lg-square rounded-circle" style="background:var(--ltl-gold-pale);color:var(--ltl-navy);">
+                        <i class="fa fa-phone-alt"></i>
                     </a>
-                    <div class="d-flex flex-column ms-3">
-                        <span>Call to Our Experts</span>
-                        <a href="tel:+254713506664"><span class="text-dark">+254 713506664</span></a>
+                    <div class="d-flex flex-column">
+                        <span style="font-family:'Syne',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ltl-muted)">Call Our Experts</span>
+                        <a href="tel:+254713506664" style="font-family:'Syne',sans-serif;font-weight:700;color:var(--ltl-navy);text-decoration:none;">+254 713 506 664</a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-    <!-- Navbar & Hero End -->
 
-    <!-- Page Header Start -->
-    <div class="container-fluid policy-header">
-        <div class="container text-center py-5">
-            <h1 class="display-3 text-white mb-4 wow fadeInDown">Policy & Compliance</h1>
-            <nav aria-label="breadcrumb" class="wow fadeInDown" data-wow-delay="0.3s">
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="index" class="text-white">Home</a></li>
-                    <li class="breadcrumb-item"><a href="about" class="text-white">About</a></li>
-                    <li class="breadcrumb-item active text-primary">Policy</li>
-                </ol>
-            </nav>
+    <!-- Breadcrumb -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width:800px">
+            <p class="label-gold mb-3 wow fadeInDown">Our Standards</p>
+            <h1 class="display-4 text-white mb-4 wow fadeInDown" data-wow-delay="0.1s">Policy &amp; Compliance</h1>
+            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="home">Home</a></li>
+                <li class="breadcrumb-item"><a href="about">About</a></li>
+                <li class="breadcrumb-item active">Policy</li>
+            </ol>
         </div>
     </div>
-    <!-- Page Header End -->
 
-    <!-- Policy Statement Start -->
-    <div class="container-fluid py-5">
+    <!-- CEO Policy Statement -->
+    <div class="container-fluid py-5 bg-white">
         <div class="container py-5">
-            <div class="policy-statement wow fadeInUp">
-                <h4 class="text-primary">Policy & Compliance Statement</h4>
-                <h3 class="mb-4">From Stephen Kioko Mwania, Director & CEO</h3>
-                <blockquote class="blockquote mb-0">
-                    <p class="mb-0">"We aim at consistently enhancing the quality of our products while ensuring the
-                        safety of both individuals and the environment. We commit and are dedicated to safeguarding and
-                        continuously enhancing the quality, environment, health and occupational safety of our personnel
-                        at all times."</p>
-                </blockquote>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-4 wow fadeInLeft">
+                    <img src="img/ceo.jpg" class="img-fluid rounded-3 shadow-sm" alt="Stephen Kioko Mwania — Director & CEO" style="border:1px solid rgba(11,30,61,0.07)">
+                </div>
+                <div class="col-lg-8 wow fadeInRight">
+                    <p class="label-gold mb-2">Policy &amp; Compliance Statement</p>
+                    <h2 class="mb-4" style="font-family:'Syne',sans-serif">From Our Director &amp; CEO</h2>
+                    <div class="policy-statement mb-4">
+                        <blockquote class="blockquote mb-3">
+                            <p>"We aim at consistently enhancing the quality of our products while ensuring the safety of both individuals and the environment. We commit and are dedicated to safeguarding and continuously enhancing the quality, environment, health and occupational safety of our personnel at all times."</p>
+                        </blockquote>
+                        <footer class="blockquote-footer">
+                            Stephen Kioko Mwania, <cite>Director &amp; CEO — Lekisa Trading Limited</cite>
+                        </footer>
+                    </div>
+                    <a href="contact" class="btn btn-primary rounded-pill py-3 px-5">Speak With Our Team</a>
+                </div>
             </div>
+        </div>
+    </div>
 
+    <!-- Policy Commitments -->
+    <div class="container-fluid py-5" style="background:var(--ltl-smoke)">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" style="max-width:680px">
+                <p class="label-gold mb-2">What We Stand For</p>
+                <h2 class="display-5 mb-3">Our Commitments</h2>
+                <p class="lead">The standards and obligations we hold ourselves to across every area of our operations.</p>
+            </div>
             <div class="row g-4">
-                <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
-                    <h2 class="display-5 mb-4">Our Commitments</h2>
-                    <p class="lead">At Lekisa Trading Limited, we are dedicated to upholding the highest standards in
-                        all our operations. Our policy commitments include:</p>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="policy-item">
+                        <div class="policy-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div>
+                            <h5>Safeguard Quality &amp; Safety</h5>
+                            <p>Continuously enhance the quality, environment, health and occupational safety of our personnel at all times.</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="d-flex policy-item">
-                        <div class="policy-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
+                    <div class="policy-item">
+                        <div class="policy-icon"><i class="fas fa-ban"></i></div>
                         <div>
-                            <h5>Safeguard Quality & Safety</h5>
-                            <p class="mb-0">Continuously enhance the quality, environment, health and occupational
-                                safety of our personnel at all times.</p>
+                            <h5>Eliminate Non-Conformances</h5>
+                            <p>Identify and eliminate quality non-conformances through rigorous quality control processes and systematic review.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="d-flex policy-item">
-                        <div class="policy-icon">
-                            <i class="fas fa-ban"></i>
-                        </div>
+                    <div class="policy-item">
+                        <div class="policy-icon"><i class="fas fa-chart-line"></i></div>
                         <div>
-                            <h5>Eliminate Non-Conformances</h5>
-                            <p class="mb-0">Identify and eliminate quality non-conformances through rigorous quality
-                                control processes.</p>
+                            <h5>Performance Framework</h5>
+                            <p>Establish a framework for defining quality and performance goals, and regularly evaluate and enhance processes, services, and product quality.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="d-flex policy-item">
-                        <div class="policy-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
+                    <div class="policy-item">
+                        <div class="policy-icon"><i class="fas fa-user-check"></i></div>
                         <div>
-                            <h5>Performance Framework</h5>
-                            <p class="mb-0">Establish a framework for defining quality and performance goals, and
-                                regularly evaluate and enhance processes, services and product quality.</p>
+                            <h5>Customer Satisfaction</h5>
+                            <p>Surpass customer requirements and ensure top-notch satisfaction to all customers we serve.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="d-flex policy-item">
-                        <div class="policy-icon">
-                            <i class="fas fa-user-check"></i>
-                        </div>
+                    <div class="policy-item">
+                        <div class="policy-icon"><i class="fas fa-balance-scale"></i></div>
                         <div>
-                            <h5>Customer Satisfaction</h5>
-                            <p class="mb-0">Surpass customer requirements and ensure top-notch satisfaction to all
-                                customers.</p>
+                            <h5>Regulatory Compliance</h5>
+                            <p>Adhere to all relevant environmental and safety laws, values, and regulations as we believe it is essential for conducting business responsibly.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="d-flex policy-item">
-                        <div class="policy-icon">
-                            <i class="fas fa-scale-balanced"></i>
-                        </div>
+                    <div class="policy-item">
+                        <div class="policy-icon"><i class="fas fa-recycle"></i></div>
                         <div>
-                            <h5>Regulatory Compliance</h5>
-                            <p class="mb-0">Adhere to all relevant environmental and safety laws, values and regulations
-                                as we believe it is essential for conducting business responsibly.</p>
+                            <h5>Environmental Responsibility</h5>
+                            <p>Reduce our environmental footprint by preventing pollution, minimizing waste, and promoting sustainable business practices.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="d-flex policy-item">
-                        <div class="policy-icon">
-                            <i class="fas fa-recycle"></i>
-                        </div>
+                    <div class="policy-item">
+                        <div class="policy-icon"><i class="fas fa-users"></i></div>
                         <div>
-                            <h5>Environmental Responsibility</h5>
-                            <p class="mb-0">Reduce our environmental footprint by preventing pollution and minimizing
-                                waste.</p>
+                            <h5>Employee Participation</h5>
+                            <p>Ensure employees actively participate in and are consulted on matters concerning occupational health and safety.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="d-flex policy-item">
-                        <div class="policy-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div>
-                            <h5>Employee Participation</h5>
-                            <p class="mb-0">Ensure employees actively participate in and are consulted on matters
-                                concerning occupational health and safety.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.9s">
-                    <div class="d-flex policy-item">
-                        <div class="policy-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
+                    <div class="policy-item">
+                        <div class="policy-icon"><i class="fas fa-comments"></i></div>
                         <div>
                             <h5>Transparent Communication</h5>
-                            <p class="mb-0">Maintain transparent communication with stakeholders to ensure they
-                                understand our policies, standards programs and performance.</p>
+                            <p>Maintain transparent communication with all stakeholders so they understand our policies, standards, programs, and performance.</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-    <!-- Policy Statement End -->
 
-    <!-- Commitment Section Start -->
-    <div class="container-fluid commitment-section">
-        <div class="container py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
-                <h2 class="display-5 mb-4">Our Ongoing Commitment</h2>
-                <p class="lead">This policy will undergo regular reviews to ensure its continued alignment with
-                    regulations, standards and applicable laws and regulations in all our operational locations.</p>
+    <!-- Ongoing Commitment -->
+    <div class="container-fluid commitment-section py-5">
+        <div class="container py-5 position-relative" style="z-index:2">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" style="max-width:680px">
+                <p class="label-gold mb-2">Continuous Improvement</p>
+                <h2 class="display-5 text-white mb-3">Our Ongoing Commitment</h2>
+                <p class="lead text-white-50">This policy will undergo regular reviews to ensure its continued alignment with regulations, standards, and applicable laws in all our operational locations.</p>
             </div>
-
             <div class="row g-4">
-                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="commitment-item">
-                        <div class="commitment-icon">
-                            <i class="fas fa-sync-alt"></i>
-                        </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="commitment-card">
+                        <div class="commitment-card-icon"><i class="fas fa-sync-alt"></i></div>
                         <h4>Regular Reviews</h4>
-                        <p>We continuously evaluate our policies to ensure compliance with changing regulations.</p>
+                        <p>We continuously evaluate our policies to ensure compliance with changing regulations and industry standards.</p>
                     </div>
                 </div>
-
-                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="commitment-item">
-                        <div class="commitment-icon">
-                            <i class="fas fa-chart-pie"></i>
-                        </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.35s">
+                    <div class="commitment-card">
+                        <div class="commitment-card-icon"><i class="fas fa-chart-pie"></i></div>
                         <h4>Performance Monitoring</h4>
-                        <p>We track our performance against established benchmarks and goals.</p>
+                        <p>We track our performance against established benchmarks and goals, acting promptly on any deviations.</p>
                     </div>
                 </div>
-
                 <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="commitment-item">
-                        <div class="commitment-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
+                    <div class="commitment-card">
+                        <div class="commitment-card-icon"><i class="fas fa-graduation-cap"></i></div>
                         <h4>Continuous Improvement</h4>
-                        <p>We invest in training and development to enhance our practices continually.</p>
+                        <p>We invest in training and development to enhance our practices, products, and team capabilities continually.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Commitment Section End -->
 
-    <!-- Contact CTA Start -->
-    <div class="container-fluid py-5">
+    <!-- CTA -->
+    <div class="container-fluid py-5 bg-white">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center wow fadeInUp">
+                    <p class="label-gold mb-2">Questions?</p>
                     <h2 class="display-5 mb-4">Have Questions About Our Policies?</h2>
-                    <p class="lead mb-5">Contact us to learn more about our commitment to quality, safety, and
-                        environmental responsibility.</p>
+                    <p class="lead text-muted mb-5">Contact us to learn more about our commitment to quality, safety, and environmental responsibility.</p>
                     <div class="d-flex flex-wrap gap-3 justify-content-center">
                         <a href="contact" class="btn btn-primary rounded-pill py-3 px-5">Contact Us</a>
-                        <a href="about" class="btn btn-outline-primary rounded-pill py-3 px-5">Learn More About Us</a>
+                        <a href="about" class="btn btn-outline-primary rounded-pill py-3 px-5">About Us</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Contact CTA End -->
 
-    <!-- Footer Start -->
+    <!-- Footer -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-xl-9">
-                    <div class="mb-5">
-                        <div class="row g-4">
-                            <div class="col-md-6 col-lg-6 col-xl-5">
-                                <div class="footer-item">
-                                    <a href="index" class="p-0">
-                                        <h3 class="text-white">
-                                            <i class="fab fa-slack me-3"></i>Lekisa Trading Limited
-                                        </h3>
-                                    </a>
-                                    <p class="text-white mb-4">
-                                        Your trusted partner in delivering top-tier industrial chemicals
-                                    </p>
-                                    <div class="footer-btn d-flex">
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-instagram"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-0" href="#"><i
-                                                class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6 col-xl-3">
-                                <div class="footer-item">
-                                    <h4 class="text-white mb-4">Useful Links</h4>
-                                    <a href="index"><i class="fas fa-angle-right me-2"></i> Home</a>
-                                    <a href="about"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                                    <a href="service"><i class="fas fa-angle-right me-2"></i> Services</a>
-                                    <a href="staff"><i class="fas fa-angle-right me-2"></i> Staff</a>
-                                    <a href="contact"><i class="fas fa-angle-right me-2"></i> Contact</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6 col-xl-4">
-                                <div class="footer-item">
-                                    <h4 class="mb-4 text-white">Location</h4>
-                                    <div class="embed-responsive embed-responsive-16by9 rounded mb-3">
-                                        <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d947.8562265141337!2d36.89229626954762!3d-1.3029259999177893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTgnMTAuNSJTIDM2wrA1MyczNC42IkU!5e1!3m2!1sen!2ske!4v1753177593126!5m2!1sen!2ske"
-                                            width="100%" height="150" style="border:0; border-radius: 8px;"
-                                            allowfullscreen="" loading="lazy"></iframe>
-                                    </div>
-                                    <p class="text-white">Godown No.4, Off Outering Road, Donholm, Nairobi – KENYA</p>
-                                </div>
-                            </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-item mb-4">
+                        <a href="home" class="p-0 mb-4 d-block text-decoration-none">
+                            <h3 class="text-white mb-0" style="font-family:'Syne',sans-serif;font-weight:800;letter-spacing:-0.02em">
+                                <span style="color:var(--ltl-gold)">L</span>TL
+                                <span style="font-size:.7em;font-weight:500;opacity:.7;letter-spacing:0"> Lekisa Trading</span>
+                            </h3>
+                        </a>
+                        <p class="text-white-50 mb-4">Your trusted partner in delivering top-tier industrial chemicals with commitment to quality and environmental responsibility.</p>
+                        <div class="footer-social d-flex gap-2">
+                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08)">
-                        <div class="row g-0">
-                            <div class="col-12">
-                                <div class="row g-4">
-                                    <div class="col-lg-6 col-xl-4">
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                <i class="fas fa-map-marker-alt fa-2x"></i>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-white">Address</h4>
-                                                <p class="mb-0">Donholm, Nairobi – KENYA</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-xl-4">
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                <i class="fas fa-envelope fa-2x"></i>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-white">Mail Us</h4>
-                                                <p class="mb-0">
-                                                    <a href="mailto:lekisatradingltd@gmail.com"
-                                                        class="text-white">lekisatradingltd@gmail.com</a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-xl-4">
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                <i class="fa fa-phone-alt fa-2x"></i>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-white">Telephone</h4>
-                                                <p class="mb-0">+254 713506664<br />+254 741077018</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-item mb-4">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <a href="about" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>About Us</a>
+                        <a href="service" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Services</a>
+                        <a href="staff" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Our Team</a>
+                        <a href="gallery" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Gallery</a>
+                        <a href="contact" class="text-decoration-none"><i class="fas fa-angle-right me-2" style="color:var(--ltl-gold)"></i>Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item mb-4">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <div class="d-flex mb-3 gap-3">
+                            <div class="btn-square bg-primary rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1" style="font-family:'Syne',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase">Address</h6>
+                                <p class="text-white-50 mb-0 small">Godown No.4, Off Outering Road<br>Donholm, Nairobi – KENYA</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3 gap-3">
+                            <div class="btn-square bg-primary rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1" style="font-family:'Syne',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase">Email</h6>
+                                <a href="mailto:info@lekisatrading.co.ke" class="text-white-50 text-decoration-none small">info@lekisatrading.co.ke</a>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="btn-square bg-primary rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1" style="font-family:'Syne',sans-serif;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase">Phone</h6>
+                                <a href="tel:+254713506664" class="text-white-50 text-decoration-none small d-block">+254 713 506 664</a>
+                                <a href="tel:+254741077018" class="text-white-50 text-decoration-none small d-block">+254 741 077 018</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-xl-3">
-                    <div class="footer-item">
-                        <h4 class="text-white mb-4">Newsletter</h4>
-                        <p class="text-white mb-3">Subscribe to Our Newsletter</p>
-                        <div class="position-relative rounded-pill mb-4">
-                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
-                                placeholder="Enter your email" />
-                            <button type="button"
-                                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">
-                                SignUp
-                            </button>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item mb-4">
+                        <h4 class="text-white mb-4">Location</h4>
+                        <div class="rounded-3 mb-4 overflow-hidden" style="border:1px solid rgba(201,168,76,0.15)">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d947.8562265141337!2d36.89229626954762!3d-1.3029259999177893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTgnMTAuNSJTIDM2wrA1MyczNC42IkU!5e1!3m2!1sen!2ske!4v1753177593126!5m2!1sen!2ske"
+                                width="100%" height="145" style="border:0;" allowfullscreen="" loading="lazy" title="Our Location"></iframe>
                         </div>
-                        <div class="d-flex flex-shrink-0">
-                            <div class="footer-btn">
-                                <a href="tel:+254713506664"
-                                    class="btn btn-lg-square rounded-circle position-relative wow tada"
-                                    data-wow-delay=".9s">
-                                    <i class="fa fa-phone-alt fa-2x"></i>
-                                    <div class="position-absolute" style="top: 2px; right: 12px">
-                                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="d-flex flex-column ms-3 flex-shrink-0">
-                                <span>Call to Our Experts</span>
-                                <a href="tel:+254713506664"><span class="text-white">+254 713506664</span></a>
-                            </div>
+                        <h4 class="text-white mb-3">Newsletter</h4>
+                        <p class="text-white-50 mb-3 small">Subscribe for product updates and industry news.</p>
+                        <div class="position-relative">
+                            <input class="form-control rounded-pill py-3 ps-4 pe-5" type="email" placeholder="Your email address">
+                            <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4" style="border-top:1px solid rgba(255,255,255,0.06)">
+                <div class="col-12 text-center">
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+                        <div class="btn-square bg-primary rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="fa fa-phone-alt"></i>
+                        </div>
+                        <div class="text-start">
+                            <span class="text-white-50 small" style="font-family:'Syne',sans-serif;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase">Call to Our Experts</span>
+                            <a href="tel:+254713506664" class="d-block text-white text-decoration-none" style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.1rem">+254 713 506 664</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
 
-    <!-- Copyright Start -->
+    <!-- Copyright -->
     <div class="container-fluid copyright py-4">
         <div class="container">
-            <div class="row g-4 align-items-center">
-                <div class="col-md-6 text-center text-md-end mb-md-0">
-                    <span class="text-body"><a href="index" class="border-bottom text-white"><i
-                                class="fas fa-copyright text-light me-2"></i>2026 Lekisa Trading Limited</a>, All right
-                        reserved.</span>
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-white-50">&copy; <a href="home">2026 Lekisa Trading Limited</a> — All rights reserved.</span>
                 </div>
-                <div class="col-md-6 text-center text-md-start text-body">
-                    Designed By
-                    <a class="border-bottom text-white" href="https://muli-samuel.onrender.com" target="_blank">Samuel
-                        Muli</a>
+                <div class="col-md-6 text-center text-md-end text-white-50">
+                    Designed by <a href="https://muli-samuel.onrender.com" target="_blank">Samuel Muli</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -583,10 +577,8 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
